@@ -1,0 +1,160 @@
+==================== 2026-03-12T18:11:34.708286Z | a214e2e3-39f4-4d29-b5f3-0a60cbbc352f ====================
+18:11:34.708555 [info ]: Starting dbt LSP server
+18:11:34.708631 [info ]: Connecting to LSP client on port 8000
+18:11:34.708926 [info ]: Successfully connected to LSP client
+18:11:34.708940 [info ]: Creating LSP service...
+18:11:34.756615 [info ]: Creating LSP server...
+18:11:34.756637 [info ]: Starting LSP server...
+18:11:34.768808 [info ]: Loading profiles.yml
+18:11:34.780629 [info ]: Started loading project
+18:11:34.780865 [info ]: Loading profiles.yml
+18:11:34.920586 [info ]:    Started resolving packages from packages.yml
+18:11:35.127786 [info ]:   Finished [  0.21s] resolving packages from packages.yml
+18:11:35.127970 [debug]:    Started loading packages
+18:11:35.130032 [debug]:     Loaded [  0.00s] packages
+18:11:35.131546 [info ]: Finished loading project [  0.35s]
+18:11:35.132132 [info ]: Started parsing
+18:11:35.159363 [debug]: Finished parsing models/staging/__sources.yml [  0.00s]
+18:11:35.168966 [debug]: Finished parsing models/marts/stock_news_daily.sql [  0.00s]
+18:11:35.169277 [debug]: Finished parsing models/marts/weather_market_conditions.sql [  0.00s]
+18:11:35.169584 [debug]: Finished parsing models/staging/raw_news.sql [  0.00s]
+18:11:35.169812 [debug]: Finished parsing models/staging/raw_stocks.sql [  0.00s]
+18:11:35.170050 [debug]: Finished parsing models/staging/raw_weather.sql [  0.00s]
+18:11:35.170246 [debug]: Finished parsing models/warehouse/dim_symbols.sql [  0.00s]
+18:11:35.170500 [debug]: Finished parsing models/warehouse/dim_weather_cities.sql [  0.00s]
+18:11:35.173443 [debug]: Finished parsing models/warehouse/fct_daily_stocks.sql [  0.00s]
+18:11:35.173876 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_DATETIME.sql [  0.00s]
+18:11:35.174213 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_HEADLINE.sql [  0.00s]
+18:11:35.174477 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_ID.sql [  0.00s]
+18:11:35.174710 [debug]: Finished parsing target/generic_tests/source_unique_snowbearair_LASTN_FI_NEWS_ID.sql [  0.00s]
+18:11:35.174958 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_RELATED.sql [  0.00s]
+18:11:35.175474 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_CLOSE.sql [  0.00s]
+18:11:35.175820 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_CLOSE.sql [  0.00s]
+18:11:35.176140 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_HIGH.sql [  0.00s]
+18:11:35.176332 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_HIGH.sql [  0.00s]
+18:11:35.176531 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_LOW.sql [  0.00s]
+18:11:35.176878 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_LOW.sql [  0.00s]
+18:11:35.177136 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_OPEN.sql [  0.00s]
+18:11:35.177359 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_OPEN.sql [  0.00s]
+18:11:35.177602 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_SYMBOL.sql [  0.00s]
+18:11:35.177915 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_TRADE_DATE.sql [  0.00s]
+18:11:35.178150 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_VOLUME.sql [  0.00s]
+18:11:35.178334 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_VOLUME.sql [  0.00s]
+18:11:35.178523 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_WEATHER_CITY.sql [  0.00s]
+18:11:35.181282 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_WEATHER_DATE.sql [  0.00s]
+18:11:35.182052 [info ]: Finished parsing [  0.05s]
+18:11:35.182431 [info ]: Cached model count updated: 8 models (estimate)
+18:11:35.182448 [info ]: Cached model count updated: 9 models (accurate)
+18:11:35.182621 [info ]: Started scheduling
+18:11:35.183060 [info ]: Finished scheduling [  0.00s]
+18:11:35.183117 [info ]: Started scheduling
+18:11:35.183171 [info ]: Finished scheduling [  0.00s]
+18:11:35.183686 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWBEARAIR_DB", schema: "RAW", table: "LASTN_FI_WEATHER" }) and interval: None
+18:11:35.183704 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWBEARAIR_DB", schema: "RAW", table: "LASTN_FI_NEWS" }) and interval: None
+18:11:35.183709 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWBEARAIR_DB", schema: "RAW", table: "LASTN_FI_STOCKS" }) and interval: None
+18:11:35.184541 [info ]: Started deferring state
+18:11:35.184550 [info ]: Finished deferring state [  0.00s]
+18:11:35.187503 [info ]: Started downloading schemas
+18:11:36.421091 [info ]: Finished downloading schemas [  1.23s]
+18:15:52.024777 [info ]: Started loading project
+18:15:52.025516 [info ]: Loading profiles.yml
+18:15:52.178111 [info ]:    Started resolving packages from packages.yml
+18:15:52.336157 [info ]:   Finished [  0.16s] resolving packages from packages.yml
+18:15:52.336227 [debug]:    Started loading packages
+18:15:52.337698 [debug]:     Loaded [  0.00s] packages
+18:15:52.338285 [info ]: Finished loading project [  0.31s]
+18:15:52.338449 [info ]: Started parsing
+18:15:52.360494 [debug]: Finished parsing models/staging/__sources.yml [  0.00s]
+18:15:52.364455 [debug]: Finished parsing models/marts/stock_news_daily.sql [  0.00s]
+18:15:52.364683 [debug]: Finished parsing models/marts/weather_market_conditions.sql [  0.00s]
+18:15:52.365046 [debug]: Finished parsing models/staging/raw_news.sql [  0.00s]
+18:15:52.365403 [debug]: Finished parsing models/staging/raw_stocks.sql [  0.00s]
+18:15:52.365704 [debug]: Finished parsing models/staging/raw_weather.sql [  0.00s]
+18:15:52.366010 [debug]: Finished parsing models/warehouse/dim_symbols.sql [  0.00s]
+18:15:52.366195 [debug]: Finished parsing models/warehouse/dim_weather_cities.sql [  0.00s]
+18:15:52.366422 [debug]: Finished parsing models/warehouse/fct_daily_stocks.sql [  0.00s]
+18:15:52.368921 [debug]: Finished parsing models/warehouse/fct_daily_weather.sql [  0.00s]
+18:15:52.369229 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_DATETIME.sql [  0.00s]
+18:15:52.369449 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_HEADLINE.sql [  0.00s]
+18:15:52.369655 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_ID.sql [  0.00s]
+18:15:52.369858 [debug]: Finished parsing target/generic_tests/source_unique_snowbearair_LASTN_FI_NEWS_ID.sql [  0.00s]
+18:15:52.370051 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_RELATED.sql [  0.00s]
+18:15:52.370238 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_CLOSE.sql [  0.00s]
+18:15:52.370409 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_CLOSE.sql [  0.00s]
+18:15:52.370595 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_HIGH.sql [  0.00s]
+18:15:52.370761 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_HIGH.sql [  0.00s]
+18:15:52.370942 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_LOW.sql [  0.00s]
+18:15:52.371101 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_LOW.sql [  0.00s]
+18:15:52.371295 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_OPEN.sql [  0.00s]
+18:15:52.371451 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_OPEN.sql [  0.00s]
+18:15:52.371630 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_SYMBOL.sql [  0.00s]
+18:15:52.371814 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_TRADE_DATE.sql [  0.00s]
+18:15:52.371993 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_VOLUME.sql [  0.00s]
+18:15:52.372154 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_VOLUME.sql [  0.00s]
+18:15:52.372334 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_WEATHER_CITY.sql [  0.00s]
+18:15:52.375939 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_WEATHER_DATE.sql [  0.00s]
+18:15:52.376207 [info ]: Finished parsing [  0.04s]
+18:15:52.376424 [info ]: Cached model count updated: 9 models (estimate)
+18:15:52.376435 [info ]: Cached model count updated: 10 models (accurate)
+18:15:52.376482 [info ]: Started scheduling
+18:15:52.376580 [info ]: Finished scheduling [  0.00s]
+18:15:52.376592 [info ]: Started scheduling
+18:15:52.376654 [info ]: Finished scheduling [  0.00s]
+18:15:52.376712 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWBEARAIR_DB", schema: "RAW", table: "LASTN_FI_WEATHER" }) and interval: None
+18:15:52.376723 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWBEARAIR_DB", schema: "RAW", table: "LASTN_FI_NEWS" }) and interval: None
+18:15:52.376731 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWBEARAIR_DB", schema: "RAW", table: "LASTN_FI_STOCKS" }) and interval: None
+18:15:52.377042 [info ]: Started deferring state
+18:15:52.377049 [info ]: Finished deferring state [  0.00s]
+18:15:52.377270 [info ]: Started downloading schemas
+18:15:52.377621 [info ]: Finished downloading schemas [  0.00s]
+18:16:08.180185 [info ]: Started loading project
+18:16:08.180855 [info ]: Loading profiles.yml
+18:16:08.327179 [info ]:    Started resolving packages from packages.yml
+18:16:08.418756 [info ]:   Finished [  0.09s] resolving packages from packages.yml
+18:16:08.418804 [debug]:    Started loading packages
+18:16:08.420197 [debug]:     Loaded [  0.00s] packages
+18:16:08.420762 [info ]: Finished loading project [  0.24s]
+18:16:08.420919 [info ]: Started parsing
+18:16:08.439328 [debug]: Finished parsing models/staging/__sources.yml [  0.00s]
+18:16:08.443322 [debug]: Finished parsing models/marts/stock_news_daily.sql [  0.00s]
+18:16:08.443560 [debug]: Finished parsing models/marts/weather_market_conditions.sql [  0.00s]
+18:16:08.443908 [debug]: Finished parsing models/staging/raw_news.sql [  0.00s]
+18:16:08.444231 [debug]: Finished parsing models/staging/raw_stocks.sql [  0.00s]
+18:16:08.444548 [debug]: Finished parsing models/staging/raw_weather.sql [  0.00s]
+18:16:08.444827 [debug]: Finished parsing models/warehouse/dim_symbols.sql [  0.00s]
+18:16:08.445115 [debug]: Finished parsing models/warehouse/dim_weather_cities.sql [  0.00s]
+18:16:08.445303 [debug]: Finished parsing models/warehouse/fct_daily_stocks.sql [  0.00s]
+18:16:08.447630 [debug]: Finished parsing models/warehouse/fct_daily_weather.sql [  0.00s]
+18:16:08.447905 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_DATETIME.sql [  0.00s]
+18:16:08.448126 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_HEADLINE.sql [  0.00s]
+18:16:08.448321 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_ID.sql [  0.00s]
+18:16:08.448498 [debug]: Finished parsing target/generic_tests/source_unique_snowbearair_LASTN_FI_NEWS_ID.sql [  0.00s]
+18:16:08.448690 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_NEWS_RELATED.sql [  0.00s]
+18:16:08.448872 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_CLOSE.sql [  0.00s]
+18:16:08.449032 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_CLOSE.sql [  0.00s]
+18:16:08.449201 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_HIGH.sql [  0.00s]
+18:16:08.449364 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_HIGH.sql [  0.00s]
+18:16:08.449552 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_LOW.sql [  0.00s]
+18:16:08.449708 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_LOW.sql [  0.00s]
+18:16:08.449938 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_OPEN.sql [  0.00s]
+18:16:08.450110 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_OPEN.sql [  0.00s]
+18:16:08.450277 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_SYMBOL.sql [  0.00s]
+18:16:08.450442 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_TRADE_DATE.sql [  0.00s]
+18:16:08.450636 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_STOCKS_VOLUME.sql [  0.00s]
+18:16:08.450803 [debug]: Finished parsing target/generic_tests/source_is_positive_amount_snowbearair_LASTN_FI_STOCKS_VOLUME.sql [  0.00s]
+18:16:08.450984 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_WEATHER_CITY.sql [  0.00s]
+18:16:08.453998 [debug]: Finished parsing target/generic_tests/source_not_null_snowbearair_LASTN_FI_WEATHER_DATE.sql [  0.00s]
+18:16:08.454255 [info ]: Finished parsing [  0.03s]
+18:16:08.454465 [info ]: Cached model count updated: 9 models (estimate)
+18:16:08.454475 [info ]: Cached model count updated: 10 models (accurate)
+18:16:08.454527 [info ]: Started scheduling
+18:16:08.454624 [info ]: Finished scheduling [  0.00s]
+18:16:08.454634 [info ]: Started scheduling
+18:16:08.454737 [info ]: Finished scheduling [  0.00s]
+18:16:08.454782 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWBEARAIR_DB", schema: "RAW", table: "LASTN_FI_NEWS" }) and interval: None
+18:16:08.454797 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWBEARAIR_DB", schema: "RAW", table: "LASTN_FI_WEATHER" }) and interval: None
+18:16:08.454805 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWBEARAIR_DB", schema: "RAW", table: "LASTN_FI_STOCKS" }) and interval: None
+18:16:08.455151 [info ]: Started deferring state
+18:16:08.455159 [info ]: Finished deferring state [  0.00s]
+18:16:08.455378 [info ]: Started downloading schemas
+18:16:08.455636 [info ]: Finished downloading schemas [  0.00s]

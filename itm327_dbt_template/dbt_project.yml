@@ -1,0 +1,27 @@
+## Project
+name: itm327
+version: "1.0"
+config-version: 2
+profile: itm327
+
+## Sources
+model-paths: [models]
+analysis-paths: [analysis]
+test-paths: [tests]
+seed-paths: [seeds]
+macro-paths: [macros]
+snapshot-paths: [snapshots]
+
+## Target
+target-path: target
+clean-targets: [target, dbt_modules]
+
+## Models
+models:
+  itm327:
+    staging:
+      +materialized: view
+    warehouse:
+      +materialized: table
+    marts:
+      +materialized: table

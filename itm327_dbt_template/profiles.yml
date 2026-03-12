@@ -1,0 +1,19 @@
+itm327:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: TRAINING_ROLE
+      database: SNOWBEARAIR_DB
+      schema: DEV
+      warehouse: ANIMAL_TASK_WH
+    prod:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: TRAINING_ROLE
+      database: SNOWBEARAIR_DB
+      schema: PROD
+      warehouse: ANIMAL_TASK_WH
