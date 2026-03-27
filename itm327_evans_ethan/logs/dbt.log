@@ -1,0 +1,28 @@
+
+
+============================== 08:10:01.680252 | f7942e5e-a845-4fca-b54a-bd362e1545af ==============================
+[0m08:10:01.680252 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m08:10:01.681501 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'profiles_dir': '/tmp/dbt/', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt ', 'target_path': '/tmp/dbt/target/', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m08:10:02.069846 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m08:10:02.630668 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m08:10:02.632323 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:10:04.086612 [error] [Dummy-1   ]: Encountered an error:
+Parsing Error in model market_volatility_metrics (models/marts/market_volatility_metrics.py)
+  No jinja in python model code is allowed
+[0m08:10:04.088735 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 2.5107646, "process_in_blocks": "0", "process_kernel_time": 0.9, "process_mem_max_rss": "455376", "process_out_blocks": "0", "process_user_time": 5.89}
+[0m08:10:04.089551 [debug] [Dummy-1   ]: Command `cli compile` failed at 08:10:04.089238 after 2.51 seconds
+[0m08:10:04.090265 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:16:23.793250 | 7ae17c90-b808-4007-91f7-39e9b47b81c2 ==============================
+[0m13:16:23.793250 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:16:23.794349 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': '/tmp/dbt/target/', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m13:16:24.158823 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:16:24.727735 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:16:24.729434 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:16:26.208685 [error] [Dummy-1   ]: Encountered an error:
+Parsing Error in model market_volatility_metrics (models/marts/market_volatility_metrics.py)
+  No jinja in python model code is allowed
+[0m13:16:26.210716 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 2.5157628, "process_in_blocks": "0", "process_kernel_time": 1.03, "process_mem_max_rss": "443696", "process_out_blocks": "0", "process_user_time": 5.6}
+[0m13:16:26.211519 [debug] [Dummy-1   ]: Command `cli compile` failed at 13:16:26.211221 after 2.52 seconds
+[0m13:16:26.212184 [debug] [Dummy-1   ]: Flushing usage events
