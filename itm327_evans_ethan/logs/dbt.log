@@ -26,3 +26,2579 @@ Parsing Error in model market_volatility_metrics (models/marts/market_volatility
 [0m13:16:26.210716 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 2.5157628, "process_in_blocks": "0", "process_kernel_time": 1.03, "process_mem_max_rss": "443696", "process_out_blocks": "0", "process_user_time": 5.6}
 [0m13:16:26.211519 [debug] [Dummy-1   ]: Command `cli compile` failed at 13:16:26.211221 after 2.52 seconds
 [0m13:16:26.212184 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:14:48.437959 | 2b274cdd-11ef-4350-92e9-981969a3ea6a ==============================
+[0m13:14:48.437959 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:14:48.439190 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/tmp/dbt/logs', 'profiles_dir': '/tmp/dbt/', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt ', 'target_path': '/tmp/dbt/target/', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m13:14:48.807415 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:14:49.368175 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:14:49.369702 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:14:50.806406 [error] [Dummy-1   ]: Encountered an error:
+Parsing Error in model market_volatility_metrics (models/marts/market_volatility_metrics.py)
+  No jinja in python model code is allowed
+[0m13:14:50.808539 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 2.4705772, "process_in_blocks": "0", "process_kernel_time": 1.09, "process_mem_max_rss": "453388", "process_out_blocks": "0", "process_user_time": 5.67}
+[0m13:14:50.809389 [debug] [Dummy-1   ]: Command `cli compile` failed at 13:14:50.809085 after 2.47 seconds
+[0m13:14:50.810080 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:17:57.742068 | 8f045ed0-cf79-4d50-bb0b-cea2491c0106 ==============================
+[0m13:17:57.742068 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:17:57.743187 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'target_path': '/tmp/dbt/target/', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m13:17:58.109269 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:17:58.678630 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:17:58.680143 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:18:00.615685 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  Model 'model.itm327.raw_stocks' (models/staging/raw_stocks.sql) depends on a source named 'snowbearair.STONKS' which was not found
+[0m13:18:00.617726 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 2.9738026, "process_in_blocks": "0", "process_kernel_time": 0.97, "process_mem_max_rss": "460980", "process_out_blocks": "0", "process_user_time": 6.11}
+[0m13:18:00.618566 [debug] [Dummy-1   ]: Command `cli compile` failed at 13:18:00.618181 after 2.97 seconds
+[0m13:18:00.619243 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:19:00.352171 | 6deedac4-a4af-4c20-8941-241f944d9071 ==============================
+[0m13:19:00.352171 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:19:00.353458 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt ', 'static_parser': 'True', 'introspect': 'True', 'target_path': '/tmp/dbt/target/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m13:19:00.742500 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:19:01.345310 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:19:01.347587 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:19:03.368156 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  Model 'model.itm327.raw_stocks' (models/staging/raw_stocks.sql) depends on a source named 'snowbearair.raw.STONKS' which was not found
+[0m13:19:03.371390 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 3.1224754, "process_in_blocks": "0", "process_kernel_time": 1.22, "process_mem_max_rss": "454344", "process_out_blocks": "0", "process_user_time": 6.08}
+[0m13:19:03.372298 [debug] [Dummy-1   ]: Command `cli compile` failed at 13:19:03.371958 after 3.12 seconds
+[0m13:19:03.372993 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:19:54.607998 | 5ebcbe5b-f5a8-4251-b072-012e5a570249 ==============================
+[0m13:19:54.607998 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:19:54.609301 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': '/tmp/dbt/target/', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'False'}
+[0m13:19:54.981515 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:19:55.549481 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:19:55.551007 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:19:57.522674 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  Model 'model.itm327.raw_news' (models/staging/raw_news.sql) depends on a source named 'snowbearair.SFTP_API_EVANS_E' which was not found
+[0m13:19:57.525058 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 3.0169342, "process_in_blocks": "0", "process_kernel_time": 1.23, "process_mem_max_rss": "458248", "process_out_blocks": "0", "process_user_time": 6.06}
+[0m13:19:57.525838 [debug] [Dummy-1   ]: Command `cli compile` failed at 13:19:57.525545 after 3.02 seconds
+[0m13:19:57.526501 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:20:26.416350 | 4c74ad23-b717-4c43-a597-bc5f8192b17e ==============================
+[0m13:20:26.416350 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:20:26.417490 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'target_path': '/tmp/dbt/target/', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m13:20:26.787413 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:20:27.350876 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:20:27.352594 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:20:29.273210 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  Model 'model.itm327.raw_stocks' (models/staging/raw_stocks.sql) depends on a source named 'snowbearair_db.raw.STONKS' which was not found
+[0m13:20:29.275325 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 2.9576695, "process_in_blocks": "0", "process_kernel_time": 1.16, "process_mem_max_rss": "453640", "process_out_blocks": "0", "process_user_time": 6.0}
+[0m13:20:29.276083 [debug] [Dummy-1   ]: Command `cli compile` failed at 13:20:29.275795 after 2.96 seconds
+[0m13:20:29.276721 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:21:07.756385 | ea1fae98-796d-4e65-82c0-ddb853efa91e ==============================
+[0m13:21:07.756385 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:21:07.757485 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt ', 'target_path': '/tmp/dbt/target/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m13:21:08.135995 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:21:08.696236 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:21:08.697772 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:21:10.627773 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  Model 'model.itm327.raw_weather' (models/staging/raw_weather.sql) depends on a source named 'snowbearair_db.raw.WEATHER_API_EVANS_E' which was not found
+[0m13:21:10.629905 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 2.972728, "process_in_blocks": "0", "process_kernel_time": 1.07, "process_mem_max_rss": "452012", "process_out_blocks": "0", "process_user_time": 6.06}
+[0m13:21:10.630653 [debug] [Dummy-1   ]: Command `cli compile` failed at 13:21:10.630366 after 2.97 seconds
+[0m13:21:10.631297 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:21:33.174246 | 01b466e2-9fb7-492b-8a02-0f512a51f1bc ==============================
+[0m13:21:33.174246 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:21:33.175393 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'static_parser': 'True', 'target_path': '/tmp/dbt/target/', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m13:21:33.550320 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:21:34.111018 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:21:34.112407 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:21:36.063535 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  Model 'model.itm327.raw_news' (models/staging/raw_news.sql) depends on a source named 'snowbearair_db.SFTP_API_EVANS_E' which was not found
+[0m13:21:36.065660 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 2.9910626, "process_in_blocks": "0", "process_kernel_time": 0.99, "process_mem_max_rss": "461236", "process_out_blocks": "0", "process_user_time": 6.2}
+[0m13:21:36.066431 [debug] [Dummy-1   ]: Command `cli compile` failed at 13:21:36.066138 after 2.99 seconds
+[0m13:21:36.067099 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:22:53.628331 | 56173917-24bf-4dfb-9bec-9371885b5d98 ==============================
+[0m13:22:53.628331 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:22:53.629601 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'profiles_dir': '/tmp/dbt/', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'log_format': 'default', 'target_path': '/tmp/dbt/target/', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m13:22:54.019812 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:22:54.587806 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:22:54.589381 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:22:56.649674 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  Model 'model.itm327.raw_news' (models/staging/raw_news.sql) depends on a source named 'snowbearair_db.SFTP_API_EVANS_E' which was not found
+[0m13:22:56.652008 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 3.126488, "process_in_blocks": "0", "process_kernel_time": 1.02, "process_mem_max_rss": "452272", "process_out_blocks": "0", "process_user_time": 6.35}
+[0m13:22:56.652839 [debug] [Dummy-1   ]: Command `cli compile` failed at 13:22:56.652523 after 3.13 seconds
+[0m13:22:56.653552 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:24:35.606484 | 50e8368f-a0e1-4eb5-aea9-e44b04a65fc7 ==============================
+[0m13:24:35.606484 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:24:35.607612 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'target_path': '/tmp/dbt/target/', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m13:24:35.981751 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:24:36.543868 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:24:36.545532 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:24:38.788218 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m13:24:38.790940 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m13:24:38.983823 [info ] [Dummy-1   ]: Found 13 models, 19 data tests, 3 sources, 476 macros
+[0m13:24:38.988669 [info ] [Dummy-1   ]: 
+[0m13:24:38.989349 [info ] [Dummy-1   ]: Concurrency: 1 threads (target='dev')
+[0m13:24:38.989830 [info ] [Dummy-1   ]: 
+[0m13:24:38.990669 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m13:24:38.998891 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SNOWBEARAIR_DB_RAW'
+[0m13:24:39.111486 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB_RAW"
+[0m13:24:39.112223 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB_RAW"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m13:24:39.112722 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:24:39.824772 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.712 seconds
+[0m13:24:39.830801 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB_RAW"
+[0m13:24:39.831491 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB_RAW"} */
+show objects in SNOWBEARAIR_DB.RAW
+    limit 10000
+    
+;
+[0m13:24:40.210379 [debug] [ThreadPool]: SQL status: SUCCESS 122 in 0.378 seconds
+[0m13:24:40.217621 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB_RAW"
+[0m13:24:40.218252 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB_RAW"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m13:24:40.361882 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.143 seconds
+[0m13:24:40.409737 [debug] [Thread-2 (]: Began running node model.itm327.DataScientistMart
+[0m13:24:40.410607 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_SNOWBEARAIR_DB_RAW, now model.itm327.DataScientistMart)
+[0m13:24:40.411219 [debug] [Thread-2 (]: Began compiling node model.itm327.DataScientistMart
+[0m13:24:40.421479 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.DataScientistMart"
+[0m13:24:40.422539 [debug] [Thread-2 (]: Began executing node model.itm327.DataScientistMart
+[0m13:24:40.423642 [debug] [Thread-2 (]: Finished running node model.itm327.DataScientistMart
+[0m13:24:40.424347 [debug] [Thread-2 (]: Began running node model.itm327.DataScientistsMart
+[0m13:24:40.425176 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.DataScientistMart, now model.itm327.DataScientistsMart)
+[0m13:24:40.425770 [debug] [Thread-2 (]: Began compiling node model.itm327.DataScientistsMart
+[0m13:24:40.430457 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.DataScientistsMart"
+[0m13:24:40.431301 [debug] [Thread-2 (]: Began executing node model.itm327.DataScientistsMart
+[0m13:24:40.432333 [debug] [Thread-2 (]: Finished running node model.itm327.DataScientistsMart
+[0m13:24:40.433005 [debug] [Thread-2 (]: Began running node model.itm327.raw_news
+[0m13:24:40.433790 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.DataScientistsMart, now model.itm327.raw_news)
+[0m13:24:40.434361 [debug] [Thread-2 (]: Began compiling node model.itm327.raw_news
+[0m13:24:40.440494 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.raw_news"
+[0m13:24:40.441437 [debug] [Thread-2 (]: Began executing node model.itm327.raw_news
+[0m13:24:40.442487 [debug] [Thread-2 (]: Finished running node model.itm327.raw_news
+[0m13:24:40.443165 [debug] [Thread-2 (]: Began running node model.itm327.raw_stocks
+[0m13:24:40.443998 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.raw_news, now model.itm327.raw_stocks)
+[0m13:24:40.444588 [debug] [Thread-2 (]: Began compiling node model.itm327.raw_stocks
+[0m13:24:40.450437 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.raw_stocks"
+[0m13:24:40.451284 [debug] [Thread-2 (]: Began executing node model.itm327.raw_stocks
+[0m13:24:40.452321 [debug] [Thread-2 (]: Finished running node model.itm327.raw_stocks
+[0m13:24:40.453010 [debug] [Thread-2 (]: Began running node model.itm327.raw_weather
+[0m13:24:40.454007 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.raw_stocks, now model.itm327.raw_weather)
+[0m13:24:40.454573 [debug] [Thread-2 (]: Began compiling node model.itm327.raw_weather
+[0m13:24:40.463078 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.raw_weather"
+[0m13:24:40.463970 [debug] [Thread-2 (]: Began executing node model.itm327.raw_weather
+[0m13:24:40.464954 [debug] [Thread-2 (]: Finished running node model.itm327.raw_weather
+[0m13:24:40.465648 [debug] [Thread-2 (]: Began running node test.itm327.source_is_positive_amount_snowbearair_STONKS_CLOSE.6b115fc5f3
+[0m13:24:40.466701 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.raw_weather, now test.itm327.source_is_positive_amount_snowbearair_STONKS_CLOSE.6b115fc5f3)
+[0m13:24:40.467345 [debug] [Thread-2 (]: Began compiling node test.itm327.source_is_positive_amount_snowbearair_STONKS_CLOSE.6b115fc5f3
+[0m13:24:40.474700 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_is_positive_amount_snowbearair_STONKS_CLOSE.6b115fc5f3"
+[0m13:24:40.475607 [debug] [Thread-2 (]: Began executing node test.itm327.source_is_positive_amount_snowbearair_STONKS_CLOSE.6b115fc5f3
+[0m13:24:40.476628 [debug] [Thread-2 (]: Finished running node test.itm327.source_is_positive_amount_snowbearair_STONKS_CLOSE.6b115fc5f3
+[0m13:24:40.477298 [debug] [Thread-2 (]: Began running node test.itm327.source_is_positive_amount_snowbearair_STONKS_HIGH.9e337ecc5e
+[0m13:24:40.478104 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_is_positive_amount_snowbearair_STONKS_CLOSE.6b115fc5f3, now test.itm327.source_is_positive_amount_snowbearair_STONKS_HIGH.9e337ecc5e)
+[0m13:24:40.478775 [debug] [Thread-2 (]: Began compiling node test.itm327.source_is_positive_amount_snowbearair_STONKS_HIGH.9e337ecc5e
+[0m13:24:40.486035 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_is_positive_amount_snowbearair_STONKS_HIGH.9e337ecc5e"
+[0m13:24:40.486903 [debug] [Thread-2 (]: Began executing node test.itm327.source_is_positive_amount_snowbearair_STONKS_HIGH.9e337ecc5e
+[0m13:24:40.487906 [debug] [Thread-2 (]: Finished running node test.itm327.source_is_positive_amount_snowbearair_STONKS_HIGH.9e337ecc5e
+[0m13:24:40.488678 [debug] [Thread-2 (]: Began running node test.itm327.source_is_positive_amount_snowbearair_STONKS_LOW.b3214d6f5d
+[0m13:24:40.489479 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_is_positive_amount_snowbearair_STONKS_HIGH.9e337ecc5e, now test.itm327.source_is_positive_amount_snowbearair_STONKS_LOW.b3214d6f5d)
+[0m13:24:40.490045 [debug] [Thread-2 (]: Began compiling node test.itm327.source_is_positive_amount_snowbearair_STONKS_LOW.b3214d6f5d
+[0m13:24:40.497447 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_is_positive_amount_snowbearair_STONKS_LOW.b3214d6f5d"
+[0m13:24:40.498449 [debug] [Thread-2 (]: Began executing node test.itm327.source_is_positive_amount_snowbearair_STONKS_LOW.b3214d6f5d
+[0m13:24:40.499642 [debug] [Thread-2 (]: Finished running node test.itm327.source_is_positive_amount_snowbearair_STONKS_LOW.b3214d6f5d
+[0m13:24:40.500362 [debug] [Thread-2 (]: Began running node test.itm327.source_is_positive_amount_snowbearair_STONKS_OPEN.4dcdc241d1
+[0m13:24:40.501132 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_is_positive_amount_snowbearair_STONKS_LOW.b3214d6f5d, now test.itm327.source_is_positive_amount_snowbearair_STONKS_OPEN.4dcdc241d1)
+[0m13:24:40.501709 [debug] [Thread-2 (]: Began compiling node test.itm327.source_is_positive_amount_snowbearair_STONKS_OPEN.4dcdc241d1
+[0m13:24:40.509195 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_is_positive_amount_snowbearair_STONKS_OPEN.4dcdc241d1"
+[0m13:24:40.510096 [debug] [Thread-2 (]: Began executing node test.itm327.source_is_positive_amount_snowbearair_STONKS_OPEN.4dcdc241d1
+[0m13:24:40.511079 [debug] [Thread-2 (]: Finished running node test.itm327.source_is_positive_amount_snowbearair_STONKS_OPEN.4dcdc241d1
+[0m13:24:40.511783 [debug] [Thread-2 (]: Began running node test.itm327.source_is_positive_amount_snowbearair_STONKS_VOLUME.846ae9ab71
+[0m13:24:40.512532 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_is_positive_amount_snowbearair_STONKS_OPEN.4dcdc241d1, now test.itm327.source_is_positive_amount_snowbearair_STONKS_VOLUME.846ae9ab71)
+[0m13:24:40.513102 [debug] [Thread-2 (]: Began compiling node test.itm327.source_is_positive_amount_snowbearair_STONKS_VOLUME.846ae9ab71
+[0m13:24:40.523354 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_is_positive_amount_snowbearair_STONKS_VOLUME.846ae9ab71"
+[0m13:24:40.524262 [debug] [Thread-2 (]: Began executing node test.itm327.source_is_positive_amount_snowbearair_STONKS_VOLUME.846ae9ab71
+[0m13:24:40.525236 [debug] [Thread-2 (]: Finished running node test.itm327.source_is_positive_amount_snowbearair_STONKS_VOLUME.846ae9ab71
+[0m13:24:40.525920 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_DATETIME.e313ecc44d
+[0m13:24:40.526682 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_is_positive_amount_snowbearair_STONKS_VOLUME.846ae9ab71, now test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_DATETIME.e313ecc44d)
+[0m13:24:40.527248 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_DATETIME.e313ecc44d
+[0m13:24:40.541009 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_DATETIME.e313ecc44d"
+[0m13:24:40.541905 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_DATETIME.e313ecc44d
+[0m13:24:40.542941 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_DATETIME.e313ecc44d
+[0m13:24:40.543640 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_HEADLINE.ab96cd21ce
+[0m13:24:40.544505 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_DATETIME.e313ecc44d, now test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_HEADLINE.ab96cd21ce)
+[0m13:24:40.545110 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_HEADLINE.ab96cd21ce
+[0m13:24:40.552924 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_HEADLINE.ab96cd21ce"
+[0m13:24:40.553801 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_HEADLINE.ab96cd21ce
+[0m13:24:40.554777 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_HEADLINE.ab96cd21ce
+[0m13:24:40.555461 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_ID.df833531a0
+[0m13:24:40.556277 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_HEADLINE.ab96cd21ce, now test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_ID.df833531a0)
+[0m13:24:40.556854 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_ID.df833531a0
+[0m13:24:40.564232 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_ID.df833531a0"
+[0m13:24:40.565102 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_ID.df833531a0
+[0m13:24:40.566078 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_ID.df833531a0
+[0m13:24:40.566749 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_RELATED.9d52093b7f
+[0m13:24:40.567510 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_ID.df833531a0, now test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_RELATED.9d52093b7f)
+[0m13:24:40.568110 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_RELATED.9d52093b7f
+[0m13:24:40.575778 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_RELATED.9d52093b7f"
+[0m13:24:40.576658 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_RELATED.9d52093b7f
+[0m13:24:40.577670 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_RELATED.9d52093b7f
+[0m13:24:40.578464 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_STONKS_CLOSE.128b333cf7
+[0m13:24:40.579308 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_SFTP_API_EVANS_E_RELATED.9d52093b7f, now test.itm327.source_not_null_snowbearair_STONKS_CLOSE.128b333cf7)
+[0m13:24:40.579916 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_STONKS_CLOSE.128b333cf7
+[0m13:24:40.590365 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_STONKS_CLOSE.128b333cf7"
+[0m13:24:40.591247 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_STONKS_CLOSE.128b333cf7
+[0m13:24:40.592233 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_STONKS_CLOSE.128b333cf7
+[0m13:24:40.592907 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_STONKS_HIGH.47c1560362
+[0m13:24:40.593654 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_STONKS_CLOSE.128b333cf7, now test.itm327.source_not_null_snowbearair_STONKS_HIGH.47c1560362)
+[0m13:24:40.594233 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_STONKS_HIGH.47c1560362
+[0m13:24:40.601800 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_STONKS_HIGH.47c1560362"
+[0m13:24:40.602666 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_STONKS_HIGH.47c1560362
+[0m13:24:40.603637 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_STONKS_HIGH.47c1560362
+[0m13:24:40.604319 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_STONKS_LOW.a51c9ce7a2
+[0m13:24:40.605072 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_STONKS_HIGH.47c1560362, now test.itm327.source_not_null_snowbearair_STONKS_LOW.a51c9ce7a2)
+[0m13:24:40.605641 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_STONKS_LOW.a51c9ce7a2
+[0m13:24:40.613143 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_STONKS_LOW.a51c9ce7a2"
+[0m13:24:40.614014 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_STONKS_LOW.a51c9ce7a2
+[0m13:24:40.615022 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_STONKS_LOW.a51c9ce7a2
+[0m13:24:40.615716 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_STONKS_OPEN.c724ab558e
+[0m13:24:40.616456 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_STONKS_LOW.a51c9ce7a2, now test.itm327.source_not_null_snowbearair_STONKS_OPEN.c724ab558e)
+[0m13:24:40.617015 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_STONKS_OPEN.c724ab558e
+[0m13:24:40.624493 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_STONKS_OPEN.c724ab558e"
+[0m13:24:40.625333 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_STONKS_OPEN.c724ab558e
+[0m13:24:40.626283 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_STONKS_OPEN.c724ab558e
+[0m13:24:40.626953 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_STONKS_SYMBOL.de15902103
+[0m13:24:40.627710 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_STONKS_OPEN.c724ab558e, now test.itm327.source_not_null_snowbearair_STONKS_SYMBOL.de15902103)
+[0m13:24:40.628277 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_STONKS_SYMBOL.de15902103
+[0m13:24:40.635982 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_STONKS_SYMBOL.de15902103"
+[0m13:24:40.636834 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_STONKS_SYMBOL.de15902103
+[0m13:24:40.637784 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_STONKS_SYMBOL.de15902103
+[0m13:24:40.638530 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_STONKS_TRADE_DATE.5150254083
+[0m13:24:40.639307 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_STONKS_SYMBOL.de15902103, now test.itm327.source_not_null_snowbearair_STONKS_TRADE_DATE.5150254083)
+[0m13:24:40.639904 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_STONKS_TRADE_DATE.5150254083
+[0m13:24:40.650178 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_STONKS_TRADE_DATE.5150254083"
+[0m13:24:40.651091 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_STONKS_TRADE_DATE.5150254083
+[0m13:24:40.652089 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_STONKS_TRADE_DATE.5150254083
+[0m13:24:40.652772 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_STONKS_VOLUME.dcdfbb54c4
+[0m13:24:40.653513 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_STONKS_TRADE_DATE.5150254083, now test.itm327.source_not_null_snowbearair_STONKS_VOLUME.dcdfbb54c4)
+[0m13:24:40.654075 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_STONKS_VOLUME.dcdfbb54c4
+[0m13:24:40.661929 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_STONKS_VOLUME.dcdfbb54c4"
+[0m13:24:40.662776 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_STONKS_VOLUME.dcdfbb54c4
+[0m13:24:40.663747 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_STONKS_VOLUME.dcdfbb54c4
+[0m13:24:40.664429 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_CITY.bdefcbaf22
+[0m13:24:40.665183 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_STONKS_VOLUME.dcdfbb54c4, now test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_CITY.bdefcbaf22)
+[0m13:24:40.665743 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_CITY.bdefcbaf22
+[0m13:24:40.673128 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_CITY.bdefcbaf22"
+[0m13:24:40.673970 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_CITY.bdefcbaf22
+[0m13:24:40.674937 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_CITY.bdefcbaf22
+[0m13:24:40.675640 [debug] [Thread-2 (]: Began running node test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_DATE.76640f7849
+[0m13:24:40.676423 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_CITY.bdefcbaf22, now test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_DATE.76640f7849)
+[0m13:24:40.677004 [debug] [Thread-2 (]: Began compiling node test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_DATE.76640f7849
+[0m13:24:40.684771 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_DATE.76640f7849"
+[0m13:24:40.685650 [debug] [Thread-2 (]: Began executing node test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_DATE.76640f7849
+[0m13:24:40.686614 [debug] [Thread-2 (]: Finished running node test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_DATE.76640f7849
+[0m13:24:40.687297 [debug] [Thread-2 (]: Began running node test.itm327.source_unique_snowbearair_SFTP_API_EVANS_E_ID.09532692c2
+[0m13:24:40.688055 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_not_null_snowbearair_WEATHER_API_EVANS_E_DATE.76640f7849, now test.itm327.source_unique_snowbearair_SFTP_API_EVANS_E_ID.09532692c2)
+[0m13:24:40.688731 [debug] [Thread-2 (]: Began compiling node test.itm327.source_unique_snowbearair_SFTP_API_EVANS_E_ID.09532692c2
+[0m13:24:40.699345 [debug] [Thread-2 (]: Writing injected SQL for node "test.itm327.source_unique_snowbearair_SFTP_API_EVANS_E_ID.09532692c2"
+[0m13:24:40.700252 [debug] [Thread-2 (]: Began executing node test.itm327.source_unique_snowbearair_SFTP_API_EVANS_E_ID.09532692c2
+[0m13:24:40.701249 [debug] [Thread-2 (]: Finished running node test.itm327.source_unique_snowbearair_SFTP_API_EVANS_E_ID.09532692c2
+[0m13:24:40.701951 [debug] [Thread-2 (]: Began running node model.itm327.DataAnalystMart
+[0m13:24:40.702696 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.itm327.source_unique_snowbearair_SFTP_API_EVANS_E_ID.09532692c2, now model.itm327.DataAnalystMart)
+[0m13:24:40.703259 [debug] [Thread-2 (]: Began compiling node model.itm327.DataAnalystMart
+[0m13:24:40.741234 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.DataAnalystMart"
+[0m13:24:40.742184 [debug] [Thread-2 (]: Began executing node model.itm327.DataAnalystMart
+[0m13:24:40.743205 [debug] [Thread-2 (]: Finished running node model.itm327.DataAnalystMart
+[0m13:24:40.743933 [debug] [Thread-2 (]: Began running node model.itm327.dim_symbols
+[0m13:24:40.744700 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.DataAnalystMart, now model.itm327.dim_symbols)
+[0m13:24:40.745261 [debug] [Thread-2 (]: Began compiling node model.itm327.dim_symbols
+[0m13:24:40.751319 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.dim_symbols"
+[0m13:24:40.752242 [debug] [Thread-2 (]: Began executing node model.itm327.dim_symbols
+[0m13:24:40.753234 [debug] [Thread-2 (]: Finished running node model.itm327.dim_symbols
+[0m13:24:40.753924 [debug] [Thread-2 (]: Began running node model.itm327.fct_daily_stocks
+[0m13:24:40.754715 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.dim_symbols, now model.itm327.fct_daily_stocks)
+[0m13:24:40.755289 [debug] [Thread-2 (]: Began compiling node model.itm327.fct_daily_stocks
+[0m13:24:40.761690 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.fct_daily_stocks"
+[0m13:24:40.762523 [debug] [Thread-2 (]: Began executing node model.itm327.fct_daily_stocks
+[0m13:24:40.763534 [debug] [Thread-2 (]: Finished running node model.itm327.fct_daily_stocks
+[0m13:24:40.764226 [debug] [Thread-2 (]: Began running node model.itm327.market_volatility_metrics
+[0m13:24:40.765172 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.fct_daily_stocks, now model.itm327.market_volatility_metrics)
+[0m13:24:40.765750 [debug] [Thread-2 (]: Began compiling node model.itm327.market_volatility_metrics
+[0m13:24:40.773436 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.market_volatility_metrics"
+[0m13:24:40.774293 [debug] [Thread-2 (]: Began executing node model.itm327.market_volatility_metrics
+[0m13:24:40.775263 [debug] [Thread-2 (]: Finished running node model.itm327.market_volatility_metrics
+[0m13:24:40.775955 [debug] [Thread-2 (]: Began running node model.itm327.dim_weather_cities
+[0m13:24:40.776702 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.market_volatility_metrics, now model.itm327.dim_weather_cities)
+[0m13:24:40.777258 [debug] [Thread-2 (]: Began compiling node model.itm327.dim_weather_cities
+[0m13:24:40.785711 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.dim_weather_cities"
+[0m13:24:40.786557 [debug] [Thread-2 (]: Began executing node model.itm327.dim_weather_cities
+[0m13:24:40.787541 [debug] [Thread-2 (]: Finished running node model.itm327.dim_weather_cities
+[0m13:24:40.788231 [debug] [Thread-2 (]: Began running node model.itm327.fct_daily_weather
+[0m13:24:40.789116 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.dim_weather_cities, now model.itm327.fct_daily_weather)
+[0m13:24:40.789677 [debug] [Thread-2 (]: Began compiling node model.itm327.fct_daily_weather
+[0m13:24:40.795464 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.fct_daily_weather"
+[0m13:24:40.796326 [debug] [Thread-2 (]: Began executing node model.itm327.fct_daily_weather
+[0m13:24:40.797311 [debug] [Thread-2 (]: Finished running node model.itm327.fct_daily_weather
+[0m13:24:40.798004 [debug] [Thread-2 (]: Began running node model.itm327.stock_news_daily
+[0m13:24:40.799362 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.fct_daily_weather, now model.itm327.stock_news_daily)
+[0m13:24:40.799985 [debug] [Thread-2 (]: Began compiling node model.itm327.stock_news_daily
+[0m13:24:40.805928 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.stock_news_daily"
+[0m13:24:40.806746 [debug] [Thread-2 (]: Began executing node model.itm327.stock_news_daily
+[0m13:24:40.807722 [debug] [Thread-2 (]: Finished running node model.itm327.stock_news_daily
+[0m13:24:40.808473 [debug] [Thread-2 (]: Began running node model.itm327.weather_market_conditions
+[0m13:24:40.809257 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.stock_news_daily, now model.itm327.weather_market_conditions)
+[0m13:24:40.809819 [debug] [Thread-2 (]: Began compiling node model.itm327.weather_market_conditions
+[0m13:24:40.816354 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.weather_market_conditions"
+[0m13:24:40.817230 [debug] [Thread-2 (]: Began executing node model.itm327.weather_market_conditions
+[0m13:24:40.818224 [debug] [Thread-2 (]: Finished running node model.itm327.weather_market_conditions
+[0m13:24:40.820635 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m13:24:40.821244 [debug] [Dummy-1   ]: Connection 'model.itm327.weather_market_conditions' was properly closed.
+[0m13:24:40.827021 [debug] [Dummy-1   ]: Command end result
+[0m13:24:40.868427 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m13:24:40.871127 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m13:24:40.881810 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m13:24:40.883888 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 5.3760448, "process_in_blocks": "0", "process_kernel_time": 1.01, "process_mem_max_rss": "486896", "process_out_blocks": "0", "process_user_time": 7.33}
+[0m13:24:40.884626 [debug] [Dummy-1   ]: Command `cli compile` succeeded at 13:24:40.884344 after 5.38 seconds
+[0m13:24:40.885195 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:25:30.400922 | 78aa5afb-3d19-406e-879f-a9d86b5e5e25 ==============================
+[0m13:25:30.400922 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:25:30.402044 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt ', 'introspect': 'True', 'target_path': '/tmp/dbt/target/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m13:25:30.770296 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:25:31.337464 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:25:31.721837 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:25:31.722502 [debug] [Dummy-1   ]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:25:31.930319 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m13:25:31.933211 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m13:25:31.988111 [info ] [Dummy-1   ]: Found 13 models, 19 data tests, 3 sources, 476 macros
+[0m13:25:31.991867 [info ] [Dummy-1   ]: 
+[0m13:25:31.992477 [info ] [Dummy-1   ]: Concurrency: 1 threads (target='dev')
+[0m13:25:31.992941 [info ] [Dummy-1   ]: 
+[0m13:25:31.993776 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m13:25:32.001933 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SNOWBEARAIR_DB'
+[0m13:25:32.108654 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB"
+[0m13:25:32.109320 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB"} */
+show terse schemas in database SNOWBEARAIR_DB
+    limit 10000
+[0m13:25:32.109816 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:25:32.767942 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 0.658 seconds
+[0m13:25:32.773567 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SNOWBEARAIR_DB_RAW'
+[0m13:25:32.790941 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB_RAW"
+[0m13:25:32.791596 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB_RAW"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m13:25:32.792088 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:25:33.549732 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.757 seconds
+[0m13:25:33.555671 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB_RAW"
+[0m13:25:33.556322 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB_RAW"} */
+show objects in SNOWBEARAIR_DB.RAW
+    limit 10000
+    
+;
+[0m13:25:33.743236 [debug] [ThreadPool]: SQL status: SUCCESS 122 in 0.186 seconds
+[0m13:25:33.750004 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB_RAW"
+[0m13:25:33.750644 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB_RAW"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m13:25:33.841896 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.090 seconds
+[0m13:25:33.889702 [debug] [Thread-2 (]: Began running node model.itm327.DataScientistMart
+[0m13:25:33.890713 [info ] [Thread-2 (]: 1 of 13 START sql table model RAW.DataScientistMart ............................ [RUN]
+[0m13:25:33.891603 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_SNOWBEARAIR_DB_RAW, now model.itm327.DataScientistMart)
+[0m13:25:33.892205 [debug] [Thread-2 (]: Began compiling node model.itm327.DataScientistMart
+[0m13:25:33.902541 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.DataScientistMart"
+[0m13:25:33.903488 [debug] [Thread-2 (]: Began executing node model.itm327.DataScientistMart
+[0m13:25:33.950140 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.DataScientistMart"
+[0m13:25:33.953513 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.DataScientistMart"
+[0m13:25:33.954414 [debug] [Thread-2 (]: On model.itm327.DataScientistMart: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.DataScientistMart"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.DataScientistMart
+         as
+        (-- show stock data alongside weather data
+
+WITH weather_pivot AS (
+    SELECT
+        date,
+
+        -- New York
+        MAX(CASE WHEN city = 'New York' THEN max_temp END) AS ny_max_temp,
+        MAX(CASE WHEN city = 'New York' THEN min_temp END) AS ny_min_temp,
+        MAX(CASE WHEN city = 'New York' THEN max_wind END) AS ny_max_wind,
+        MAX(CASE WHEN city = 'New York' THEN precip END) AS ny_precip,
+
+        -- London
+        MAX(CASE WHEN city = 'London' THEN max_temp END) AS london_max_temp,
+        MAX(CASE WHEN city = 'London' THEN min_temp END) AS london_min_temp,
+        MAX(CASE WHEN city = 'London' THEN max_wind END) AS london_max_wind,
+        MAX(CASE WHEN city = 'London' THEN precip END) AS london_precip,
+
+        -- Tokyo
+        MAX(CASE WHEN city = 'Tokyo' THEN max_temp END) AS tokyo_max_temp,
+        MAX(CASE WHEN city = 'Tokyo' THEN min_temp END) AS tokyo_min_temp,
+        MAX(CASE WHEN city = 'Tokyo' THEN max_wind END) AS tokyo_max_wind,
+        MAX(CASE WHEN city = 'Tokyo' THEN precip END) AS tokyo_precip
+
+    FROM snowbearair_db.raw.weather_api_evans_e
+    GROUP BY date
+)
+
+SELECT
+    s.symbol,
+    CAST(s.datetime AS DATE) AS date,
+    s.open,
+    s.high,
+    s.low,
+    s.close,
+
+    w.ny_max_temp,
+    w.ny_min_temp,
+    w.ny_max_wind,
+    w.ny_precip,
+
+    w.london_max_temp,
+    w.london_min_temp,
+    w.london_max_wind,
+    w.london_precip,
+
+    w.tokyo_max_temp,
+    w.tokyo_min_temp,
+    w.tokyo_max_wind,
+    w.tokyo_precip
+
+FROM snowbearair_db.raw.stonks s
+LEFT JOIN weather_pivot w
+    ON CAST(s.datetime AS DATE) = w.date
+;
+[0m13:25:33.955168 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:34.675373 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c350a9-0108-3e84-001a-e3f30047300a
+[0m13:25:34.676131 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 57 at position 0 unexpected ';'.
+[0m13:25:34.681794 [debug] [Thread-2 (]: Database Error in model DataScientistMart (models/marts/DataScientistMart.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 57 at position 0 unexpected ';'.
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/DataScientistMart.sql
+[0m13:25:34.685394 [error] [Thread-2 (]: 1 of 13 ERROR creating sql table model RAW.DataScientistMart ................... [[31mERROR[0m in 0.79s]
+[0m13:25:34.686451 [debug] [Thread-2 (]: Finished running node model.itm327.DataScientistMart
+[0m13:25:34.687227 [debug] [Thread-2 (]: Began running node model.itm327.DataScientistsMart
+[0m13:25:34.688079 [debug] [Thread-5 (]: Marking all children of 'model.itm327.DataScientistMart' to be skipped because of status 'error'.  Reason: Database Error in model DataScientistMart (models/marts/DataScientistMart.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 57 at position 0 unexpected ';'.
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/DataScientistMart.sql.
+[0m13:25:34.689173 [info ] [Thread-2 (]: 2 of 13 START sql table model RAW.DataScientistsMart ........................... [RUN]
+[0m13:25:34.692656 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.DataScientistMart, now model.itm327.DataScientistsMart)
+[0m13:25:34.693316 [debug] [Thread-2 (]: Began compiling node model.itm327.DataScientistsMart
+[0m13:25:34.698336 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.DataScientistsMart"
+[0m13:25:34.699485 [debug] [Thread-2 (]: Began executing node model.itm327.DataScientistsMart
+[0m13:25:34.709753 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.DataScientistsMart"
+[0m13:25:34.713038 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.DataScientistsMart"
+[0m13:25:34.713900 [debug] [Thread-2 (]: On model.itm327.DataScientistsMart: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.DataScientistsMart"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.DataScientistsMart
+         as
+        (-- show stock data alongside weather data
+
+WITH weather_pivot AS (
+    SELECT
+        date,
+
+        -- New York
+        MAX(CASE WHEN city = 'New York' THEN max_temp END) AS ny_max_temp,
+        MAX(CASE WHEN city = 'New York' THEN min_temp END) AS ny_min_temp,
+        MAX(CASE WHEN city = 'New York' THEN max_wind END) AS ny_max_wind,
+        MAX(CASE WHEN city = 'New York' THEN precip END) AS ny_precip,
+
+        -- London
+        MAX(CASE WHEN city = 'London' THEN max_temp END) AS london_max_temp,
+        MAX(CASE WHEN city = 'London' THEN min_temp END) AS london_min_temp,
+        MAX(CASE WHEN city = 'London' THEN max_wind END) AS london_max_wind,
+        MAX(CASE WHEN city = 'London' THEN precip END) AS london_precip,
+
+        -- Tokyo
+        MAX(CASE WHEN city = 'Tokyo' THEN max_temp END) AS tokyo_max_temp,
+        MAX(CASE WHEN city = 'Tokyo' THEN min_temp END) AS tokyo_min_temp,
+        MAX(CASE WHEN city = 'Tokyo' THEN max_wind END) AS tokyo_max_wind,
+        MAX(CASE WHEN city = 'Tokyo' THEN precip END) AS tokyo_precip
+
+    FROM snowbearair_db.raw.weather_api_evans_e
+    GROUP BY date
+)
+
+SELECT
+    s.symbol,
+    CAST(s.datetime AS DATE) AS date,
+    s.open,
+    s.high,
+    s.low,
+    s.close,
+
+    w.ny_max_temp,
+    w.ny_min_temp,
+    w.ny_max_wind,
+    w.ny_precip,
+
+    w.london_max_temp,
+    w.london_min_temp,
+    w.london_max_wind,
+    w.london_precip,
+
+    w.tokyo_max_temp,
+    w.tokyo_min_temp,
+    w.tokyo_max_wind,
+    w.tokyo_precip
+
+FROM snowbearair_db.raw.stonks s
+LEFT JOIN weather_pivot w
+    ON CAST(s.datetime AS DATE) = w.date
+;
+[0m13:25:34.714651 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:35.478187 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c350a9-0108-3e84-001a-e3f300473022
+[0m13:25:35.479085 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 57 at position 0 unexpected ';'.
+[0m13:25:35.484079 [debug] [Thread-2 (]: Database Error in model DataScientistsMart (models/marts/DataScientistsMart.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 57 at position 0 unexpected ';'.
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/DataScientistsMart.sql
+[0m13:25:35.485547 [error] [Thread-2 (]: 2 of 13 ERROR creating sql table model RAW.DataScientistsMart .................. [[31mERROR[0m in 0.79s]
+[0m13:25:35.486453 [debug] [Thread-2 (]: Finished running node model.itm327.DataScientistsMart
+[0m13:25:35.487170 [debug] [Thread-2 (]: Began running node model.itm327.raw_news
+[0m13:25:35.487904 [debug] [Thread-5 (]: Marking all children of 'model.itm327.DataScientistsMart' to be skipped because of status 'error'.  Reason: Database Error in model DataScientistsMart (models/marts/DataScientistsMart.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 57 at position 0 unexpected ';'.
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/DataScientistsMart.sql.
+[0m13:25:35.488909 [info ] [Thread-2 (]: 3 of 13 START sql view model RAW.raw_news ...................................... [RUN]
+[0m13:25:35.489917 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.DataScientistsMart, now model.itm327.raw_news)
+[0m13:25:35.490498 [debug] [Thread-2 (]: Began compiling node model.itm327.raw_news
+[0m13:25:35.496729 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.raw_news"
+[0m13:25:35.497672 [debug] [Thread-2 (]: Began executing node model.itm327.raw_news
+[0m13:25:35.545812 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.raw_news"
+[0m13:25:35.547289 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.raw_news"
+[0m13:25:35.548002 [debug] [Thread-2 (]: On model.itm327.raw_news: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.raw_news"} */
+create or replace   view SNOWBEARAIR_DB.RAW.raw_news
+  
+   as (
+    -- TODO: Update the source table name to match your prefix (e.g., SMITHJ_NEWS)
+select *
+from SNOWBEARAIR_DB.RAW.SFTP_API_EVANS_E
+  );
+[0m13:25:35.548687 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:36.614599 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.066 seconds
+[0m13:25:36.648501 [info ] [Thread-2 (]: 3 of 13 OK created sql view model RAW.raw_news ................................. [[32mSUCCESS 1[0m in 1.16s]
+[0m13:25:36.649523 [debug] [Thread-2 (]: Finished running node model.itm327.raw_news
+[0m13:25:36.650232 [debug] [Thread-2 (]: Began running node model.itm327.raw_stocks
+[0m13:25:36.651106 [info ] [Thread-2 (]: 4 of 13 START sql view model RAW.raw_stocks .................................... [RUN]
+[0m13:25:36.651846 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.raw_news, now model.itm327.raw_stocks)
+[0m13:25:36.652403 [debug] [Thread-2 (]: Began compiling node model.itm327.raw_stocks
+[0m13:25:36.658608 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.raw_stocks"
+[0m13:25:36.659655 [debug] [Thread-2 (]: Began executing node model.itm327.raw_stocks
+[0m13:25:36.669209 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.raw_stocks"
+[0m13:25:36.670518 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.raw_stocks"
+[0m13:25:36.671151 [debug] [Thread-2 (]: On model.itm327.raw_stocks: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.raw_stocks"} */
+create or replace   view SNOWBEARAIR_DB.RAW.raw_stocks
+  
+   as (
+    -- TODO: Update the source table name to match your prefix (e.g., SMITHJ_STOCKS)
+select *
+from SNOWBEARAIR_DB.RAW.STONKS
+  );
+[0m13:25:36.671733 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:37.618925 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.947 seconds
+[0m13:25:37.622628 [info ] [Thread-2 (]: 4 of 13 OK created sql view model RAW.raw_stocks ............................... [[32mSUCCESS 1[0m in 0.97s]
+[0m13:25:37.623623 [debug] [Thread-2 (]: Finished running node model.itm327.raw_stocks
+[0m13:25:37.624453 [debug] [Thread-2 (]: Began running node model.itm327.raw_weather
+[0m13:25:37.625708 [info ] [Thread-2 (]: 5 of 13 START sql view model RAW.raw_weather ................................... [RUN]
+[0m13:25:37.626469 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.raw_stocks, now model.itm327.raw_weather)
+[0m13:25:37.627024 [debug] [Thread-2 (]: Began compiling node model.itm327.raw_weather
+[0m13:25:37.633129 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.raw_weather"
+[0m13:25:37.634035 [debug] [Thread-2 (]: Began executing node model.itm327.raw_weather
+[0m13:25:37.640963 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.raw_weather"
+[0m13:25:37.642211 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.raw_weather"
+[0m13:25:37.642832 [debug] [Thread-2 (]: On model.itm327.raw_weather: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.raw_weather"} */
+create or replace   view SNOWBEARAIR_DB.RAW.raw_weather
+  
+   as (
+    -- TODO: Update the source table name to match your prefix (e.g., SMITHJ_WEATHER)
+select *
+from SNOWBEARAIR_DB.RAW.WEATHER_API_EVANS_E
+  );
+[0m13:25:37.643378 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:38.519738 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.876 seconds
+[0m13:25:38.523358 [info ] [Thread-2 (]: 5 of 13 OK created sql view model RAW.raw_weather .............................. [[32mSUCCESS 1[0m in 0.90s]
+[0m13:25:38.524317 [debug] [Thread-2 (]: Finished running node model.itm327.raw_weather
+[0m13:25:38.525027 [debug] [Thread-2 (]: Began running node model.itm327.DataAnalystMart
+[0m13:25:38.526250 [info ] [Thread-2 (]: 6 of 13 START python table model RAW.DataAnalystMart ........................... [RUN]
+[0m13:25:38.527084 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.raw_weather, now model.itm327.DataAnalystMart)
+[0m13:25:38.527688 [debug] [Thread-2 (]: Began compiling node model.itm327.DataAnalystMart
+[0m13:25:38.562355 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.DataAnalystMart"
+[0m13:25:38.563398 [debug] [Thread-2 (]: Began executing node model.itm327.DataAnalystMart
+[0m13:25:38.576125 [debug] [Thread-2 (]: Writing runtime python for node "model.itm327.DataAnalystMart"
+[0m13:25:38.579448 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.DataAnalystMart"
+[0m13:25:38.580733 [debug] [Thread-2 (]: On model.itm327.DataAnalystMart: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.DataAnalystMart"} */
+WITH DataAnalystMart__dbt_sp AS PROCEDURE ()
+
+RETURNS STRING
+LANGUAGE PYTHON
+RUNTIME_VERSION = '3.9'
+PACKAGES = ('snowflake-snowpark-python')
+
+
+
+HANDLER = 'main'
+EXECUTE AS CALLER
+AS
+$$
+
+
+
+  
+    
+    
+# show stock data alongside news data
+
+from snowflake.snowpark.functions import (
+    col, avg, stddev, max as max_, min as min_,
+    count, sum as sum_, lit, when, to_date
+)
+
+
+def model(dbt, session):
+    """
+    Snowpark Python model:
+    one row per stock symbol with both trading + news stats.
+    """
+
+    # =========================
+    # STOCK DATA
+    # =========================
+    stocks_df = dbt.ref('raw_stocks')
+
+    stocks_with_metrics = stocks_df.withColumn(
+        'DAILY_RANGE', col('HIGH') - col('LOW')
+    ).withColumn(
+        'DAILY_CHANGE', col('CLOSE') - col('OPEN')
+    ).withColumn(
+        'DAILY_RETURN_PCT', (col('CLOSE') - col('OPEN')) / col('OPEN') * lit(100)
+    )
+
+    stock_summary = (
+        stocks_with_metrics
+        .groupBy('SYMBOL')
+        .agg(
+            count('TRADE_DATE').alias('TRADING_DAYS'),
+            min_('TRADE_DATE').alias('FIRST_TRADE_DATE'),
+            max_('TRADE_DATE').alias('LAST_TRADE_DATE'),
+            max_('HIGH').alias('PERIOD_HIGH'),
+            min_('LOW').alias('PERIOD_LOW'),
+            avg('CLOSE').alias('AVG_CLOSE'),
+            avg('VOLUME').alias('AVG_DAILY_VOLUME'),
+            sum_('VOLUME').alias('TOTAL_VOLUME'),
+            avg('DAILY_RANGE').alias('AVG_DAILY_RANGE'),
+            stddev('DAILY_RETURN_PCT').alias('RETURN_VOLATILITY'),
+            avg('DAILY_RETURN_PCT').alias('AVG_DAILY_RETURN_PCT'),
+            sum_(when(col('DAILY_CHANGE') > lit(0), lit(1)).otherwise(lit(0))).alias('UP_DAYS'),
+            sum_(when(col('DAILY_CHANGE') < lit(0), lit(1)).otherwise(lit(0))).alias('DOWN_DAYS'),
+        )
+    )
+
+    # =========================
+    # NEWS DATA 
+    # =========================
+    news_df = dbt.ref('raw_news')
+
+    news_with_date = news_df.withColumn(
+        'NEWS_DATE', to_date(col('DATETIME'))
+    )
+
+    news_summary = (
+        news_with_date
+        .groupBy('RELATED')
+        .agg(
+            count('*').alias('TOTAL_ARTICLES'),
+            count('NEWS_DATE').alias('ARTICLE_DAYS')
+        )
+    )
+
+    # =========================
+    # JOIN DATA
+    # =========================
+    final_df = (
+        stock_summary
+        .join(
+            news_summary,
+            stock_summary['SYMBOL'] == news_summary['RELATED'],
+            how='left'
+        )
+        .drop('RELATED')  # avoid duplicate column
+    )
+
+    return final_df
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_news": "SNOWBEARAIR_DB.RAW.raw_news", "raw_stocks": "SNOWBEARAIR_DB.RAW.raw_stocks"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "SNOWBEARAIR_DB"
+    schema = "RAW"
+    identifier = "DataAnalystMart"
+    
+    def __repr__(self):
+        return 'SNOWBEARAIR_DB.RAW.DataAnalystMart'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+
+
+def materialize(session, df, target_relation):
+    # make sure pandas exists
+    import importlib.util
+    package_name = 'pandas'
+    if importlib.util.find_spec(package_name):
+        import pandas
+        if isinstance(df, pandas.core.frame.DataFrame):
+          session.use_database(target_relation.database)
+          session.use_schema(target_relation.schema)
+          # session.write_pandas does not have overwrite function
+          df = session.createDataFrame(df)
+    
+    df.write.mode("overwrite").save_as_table('SNOWBEARAIR_DB.RAW.DataAnalystMart', table_type='transient')
+
+def main(session):
+    dbt = dbtObj(session.table)
+    df = model(dbt, session)
+    materialize(session, df, dbt.this)
+    return "OK"
+
+  
+$$
+CALL DataAnalystMart__dbt_sp();
+[0m13:25:38.581670 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:43.993898 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c350a9-0108-3e84-001a-e3f30047308a
+[0m13:25:43.995111 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 100357 (P0000): Python Interpreter Error:
+Traceback (most recent call last):
+  File "_udf_code.py", line 159, in main
+    df = model(dbt, session)
+  File "_udf_code.py", line 80, in model
+    stock_summary['SYMBOL'] == news_summary['RELATED'],
+  File "<site-packages>/snowflake/snowpark/dataframe.py", line 1504, in __getitem__
+    return self.col(item, _emit_ast=_emit_ast)
+  File "<site-packages>/snowflake/snowpark/_internal/utils.py", line 1142, in call_wrapper
+    return func(*args, **kwargs)
+  File "<site-packages>/snowflake/snowpark/dataframe.py", line 1552, in col
+    return Column(self._resolve(col_name), _ast=expr)
+  File "<site-packages>/snowflake/snowpark/dataframe.py", line 6699, in _resolve
+    lambda attr: quote_name(attr.name) == normalized_col_name, self._output
+  File "<stdlib>/functools.py", line 993, in __get__
+    val = self.func(instance)
+  File "<site-packages>/snowflake/snowpark/dataframe.py", line 6720, in _output
+    self._select_statement.column_states.projection
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/select_statement.py", line 1002, in column_states
+    self.column_states = self.from_.column_states
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/select_statement.py", line 482, in column_states
+    column_attrs = self.snowflake_plan.attributes
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+    attributes = self._analyze_attributes()
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 380, in wrap
+    raise ne.with_traceback(tb) from None
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 180, in wrap
+    return func(*args, **kwargs)
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 598, in _analyze_attributes
+    return analyze_attributes(
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 108, in analyze_attributes
+    attributes = session._get_result_attributes(sql, query_params)
+  File "<site-packages>/snowflake/snowpark/session.py", line 3151, in _get_result_attributes
+    return self._conn.get_result_attributes(query, query_params)
+  File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 277, in get_result_attributes
+    self._run_new_describe(self._cursor, query, query_params=query_params),
+  File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 288, in _run_new_describe
+    result_metadata = run_new_describe(cursor, query, query_params)
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 177, in run_new_describe
+    return cursor._describe_internal(query, params=query_params)  # pyright: ignore
+  File "<site-packages>/snowflake/connector/cursor.py", line 1182, in _describe_internal
+    self.execute(*args, **kwargs)
+  File "<site-packages>/snowflake/connector/cursor.py", line 1142, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "<site-packages>/snowflake/connector/errors.py", line 286, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "<site-packages>/snowflake/connector/errors.py", line 341, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "<site-packages>/snowflake/connector/errors.py", line 217, in default_errorhandler
+    raise error_class(
+snowflake.snowpark.exceptions.SnowparkSQLException: (1304): 01c350a9-0108-3e84-001a-e3f3004730a2: 000904 (42000): SQL compilation error: error line 3 at position 10
+invalid identifier 'TRADE_DATE'
+There are existing quoted column identifiers: ['"ID"', '"SYMBOL"', '"DATETIME"', '"OPEN"', '"HIGH"', '"LOW"', '"CLOSE"', '"VOLUME"', '"DAILY_RANGE"', '"DAILY_CHANGE"', ...]. Please use one of them to reference the column. See more details on Snowflake identifier requirements https://docs.snowflake.com/en/sql-reference/identifiers-syntax
+ in function DATAANALYSTMART__DBT_SP with handler main
+[0m13:25:44.001826 [debug] [Thread-2 (]: Database Error in model DataAnalystMart (models/marts/DataAnalystMart.py)
+  100357 (P0000): Python Interpreter Error:
+  Traceback (most recent call last):
+    File "_udf_code.py", line 159, in main
+      df = model(dbt, session)
+    File "_udf_code.py", line 80, in model
+      stock_summary['SYMBOL'] == news_summary['RELATED'],
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 1504, in __getitem__
+      return self.col(item, _emit_ast=_emit_ast)
+    File "<site-packages>/snowflake/snowpark/_internal/utils.py", line 1142, in call_wrapper
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 1552, in col
+      return Column(self._resolve(col_name), _ast=expr)
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 6699, in _resolve
+      lambda attr: quote_name(attr.name) == normalized_col_name, self._output
+    File "<stdlib>/functools.py", line 993, in __get__
+      val = self.func(instance)
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 6720, in _output
+      self._select_statement.column_states.projection
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/select_statement.py", line 1002, in column_states
+      self.column_states = self.from_.column_states
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/select_statement.py", line 482, in column_states
+      column_attrs = self.snowflake_plan.attributes
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+      attributes = self._analyze_attributes()
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 380, in wrap
+      raise ne.with_traceback(tb) from None
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 180, in wrap
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 598, in _analyze_attributes
+      return analyze_attributes(
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 108, in analyze_attributes
+      attributes = session._get_result_attributes(sql, query_params)
+    File "<site-packages>/snowflake/snowpark/session.py", line 3151, in _get_result_attributes
+      return self._conn.get_result_attributes(query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 277, in get_result_attributes
+      self._run_new_describe(self._cursor, query, query_params=query_params),
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 288, in _run_new_describe
+      result_metadata = run_new_describe(cursor, query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 177, in run_new_describe
+      return cursor._describe_internal(query, params=query_params)  # pyright: ignore
+    File "<site-packages>/snowflake/connector/cursor.py", line 1182, in _describe_internal
+      self.execute(*args, **kwargs)
+    File "<site-packages>/snowflake/connector/cursor.py", line 1142, in execute
+      Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+    File "<site-packages>/snowflake/connector/errors.py", line 286, in errorhandler_wrapper
+      handed_over = Error.hand_to_other_handler(
+    File "<site-packages>/snowflake/connector/errors.py", line 341, in hand_to_other_handler
+      cursor.errorhandler(connection, cursor, error_class, error_value)
+    File "<site-packages>/snowflake/connector/errors.py", line 217, in default_errorhandler
+      raise error_class(
+  snowflake.snowpark.exceptions.SnowparkSQLException: (1304): 01c350a9-0108-3e84-001a-e3f3004730a2: 000904 (42000): SQL compilation error: error line 3 at position 10
+  invalid identifier 'TRADE_DATE'
+  There are existing quoted column identifiers: ['"ID"', '"SYMBOL"', '"DATETIME"', '"OPEN"', '"HIGH"', '"LOW"', '"CLOSE"', '"VOLUME"', '"DAILY_RANGE"', '"DAILY_CHANGE"', ...]. Please use one of them to reference the column. See more details on Snowflake identifier requirements https://docs.snowflake.com/en/sql-reference/identifiers-syntax
+   in function DATAANALYSTMART__DBT_SP with handler main
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/DataAnalystMart.py
+[0m13:25:44.003578 [error] [Thread-2 (]: 6 of 13 ERROR creating python table model RAW.DataAnalystMart .................. [[31mERROR[0m in 5.48s]
+[0m13:25:44.004743 [debug] [Thread-2 (]: Finished running node model.itm327.DataAnalystMart
+[0m13:25:44.005424 [debug] [Thread-2 (]: Began running node model.itm327.dim_symbols
+[0m13:25:44.006675 [debug] [Thread-5 (]: Marking all children of 'model.itm327.DataAnalystMart' to be skipped because of status 'error'.  Reason: Database Error in model DataAnalystMart (models/marts/DataAnalystMart.py)
+  100357 (P0000): Python Interpreter Error:
+  Traceback (most recent call last):
+    File "_udf_code.py", line 159, in main
+      df = model(dbt, session)
+    File "_udf_code.py", line 80, in model
+      stock_summary['SYMBOL'] == news_summary['RELATED'],
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 1504, in __getitem__
+      return self.col(item, _emit_ast=_emit_ast)
+    File "<site-packages>/snowflake/snowpark/_internal/utils.py", line 1142, in call_wrapper
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 1552, in col
+      return Column(self._resolve(col_name), _ast=expr)
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 6699, in _resolve
+      lambda attr: quote_name(attr.name) == normalized_col_name, self._output
+    File "<stdlib>/functools.py", line 993, in __get__
+      val = self.func(instance)
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 6720, in _output
+      self._select_statement.column_states.projection
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/select_statement.py", line 1002, in column_states
+      self.column_states = self.from_.column_states
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/select_statement.py", line 482, in column_states
+      column_attrs = self.snowflake_plan.attributes
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+      attributes = self._analyze_attributes()
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 380, in wrap
+      raise ne.with_traceback(tb) from None
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 180, in wrap
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 598, in _analyze_attributes
+      return analyze_attributes(
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 108, in analyze_attributes
+      attributes = session._get_result_attributes(sql, query_params)
+    File "<site-packages>/snowflake/snowpark/session.py", line 3151, in _get_result_attributes
+      return self._conn.get_result_attributes(query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 277, in get_result_attributes
+      self._run_new_describe(self._cursor, query, query_params=query_params),
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 288, in _run_new_describe
+      result_metadata = run_new_describe(cursor, query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 177, in run_new_describe
+      return cursor._describe_internal(query, params=query_params)  # pyright: ignore
+    File "<site-packages>/snowflake/connector/cursor.py", line 1182, in _describe_internal
+      self.execute(*args, **kwargs)
+    File "<site-packages>/snowflake/connector/cursor.py", line 1142, in execute
+      Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+    File "<site-packages>/snowflake/connector/errors.py", line 286, in errorhandler_wrapper
+      handed_over = Error.hand_to_other_handler(
+    File "<site-packages>/snowflake/connector/errors.py", line 341, in hand_to_other_handler
+      cursor.errorhandler(connection, cursor, error_class, error_value)
+    File "<site-packages>/snowflake/connector/errors.py", line 217, in default_errorhandler
+      raise error_class(
+  snowflake.snowpark.exceptions.SnowparkSQLException: (1304): 01c350a9-0108-3e84-001a-e3f3004730a2: 000904 (42000): SQL compilation error: error line 3 at position 10
+  invalid identifier 'TRADE_DATE'
+  There are existing quoted column identifiers: ['"ID"', '"SYMBOL"', '"DATETIME"', '"OPEN"', '"HIGH"', '"LOW"', '"CLOSE"', '"VOLUME"', '"DAILY_RANGE"', '"DAILY_CHANGE"', ...]. Please use one of them to reference the column. See more details on Snowflake identifier requirements https://docs.snowflake.com/en/sql-reference/identifiers-syntax
+   in function DATAANALYSTMART__DBT_SP with handler main
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/DataAnalystMart.py.
+[0m13:25:44.007853 [info ] [Thread-2 (]: 7 of 13 START sql table model RAW.dim_symbols .................................. [RUN]
+[0m13:25:44.009781 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.DataAnalystMart, now model.itm327.dim_symbols)
+[0m13:25:44.010356 [debug] [Thread-2 (]: Began compiling node model.itm327.dim_symbols
+[0m13:25:44.016522 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.dim_symbols"
+[0m13:25:44.017417 [debug] [Thread-2 (]: Began executing node model.itm327.dim_symbols
+[0m13:25:44.024191 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.dim_symbols"
+[0m13:25:44.025931 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.dim_symbols"
+[0m13:25:44.026660 [debug] [Thread-2 (]: On model.itm327.dim_symbols: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.dim_symbols"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.dim_symbols
+         as
+        (-- dim_symbols
+-- Dimension table: one row per unique stock symbol.
+-- Contains descriptive attributes about each ticker derived from the trading history.
+--
+-- In a production DW you would enrich this with a reference API (e.g., company name,
+-- sector, market cap). For this project we derive what we can from the data we have.
+--
+-- TODO: If you have access to a symbol reference table or API, join it here to add
+--       COMPANY_NAME, SECTOR, INDUSTRY, etc.
+
+SELECT
+    SYMBOL,
+
+    -- Date range this symbol appears in your dataset
+    MIN(TRADE_DATE)  AS FIRST_SEEN_DATE,
+    MAX(TRADE_DATE)  AS LAST_SEEN_DATE,
+    COUNT(*)         AS TOTAL_TRADING_DAYS,
+
+    -- Price range across the full history
+    MAX(HIGH)        AS ALL_TIME_HIGH,
+    MIN(LOW)         AS ALL_TIME_LOW,
+    AVG(CLOSE)       AS AVG_CLOSE_PRICE,
+
+    -- Activity level (useful for filtering small/inactive tickers)
+    AVG(VOLUME)      AS AVG_DAILY_VOLUME
+
+FROM SNOWBEARAIR_DB.RAW.raw_stocks
+GROUP BY SYMBOL
+        );
+[0m13:25:44.027251 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:44.569258 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c350a9-0108-3e84-001a-e3f3004730c2
+[0m13:25:44.569989 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 17 at position 8
+invalid identifier 'TRADE_DATE'
+[0m13:25:44.575616 [debug] [Thread-2 (]: Database Error in model dim_symbols (models/warehouse/dim_symbols.sql)
+  000904 (42000): SQL compilation error: error line 17 at position 8
+  invalid identifier 'TRADE_DATE'
+  compiled code at /tmp/dbt/target/run/itm327/models/warehouse/dim_symbols.sql
+[0m13:25:44.577092 [error] [Thread-2 (]: 7 of 13 ERROR creating sql table model RAW.dim_symbols ......................... [[31mERROR[0m in 0.57s]
+[0m13:25:44.577989 [debug] [Thread-2 (]: Finished running node model.itm327.dim_symbols
+[0m13:25:44.578783 [debug] [Thread-2 (]: Began running node model.itm327.fct_daily_stocks
+[0m13:25:44.579529 [debug] [Thread-5 (]: Marking all children of 'model.itm327.dim_symbols' to be skipped because of status 'error'.  Reason: Database Error in model dim_symbols (models/warehouse/dim_symbols.sql)
+  000904 (42000): SQL compilation error: error line 17 at position 8
+  invalid identifier 'TRADE_DATE'
+  compiled code at /tmp/dbt/target/run/itm327/models/warehouse/dim_symbols.sql.
+[0m13:25:44.580384 [info ] [Thread-2 (]: 8 of 13 START sql table model RAW.fct_daily_stocks ............................. [RUN]
+[0m13:25:44.581453 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.dim_symbols, now model.itm327.fct_daily_stocks)
+[0m13:25:44.582031 [debug] [Thread-2 (]: Began compiling node model.itm327.fct_daily_stocks
+[0m13:25:44.588422 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.fct_daily_stocks"
+[0m13:25:44.589423 [debug] [Thread-2 (]: Began executing node model.itm327.fct_daily_stocks
+[0m13:25:44.596196 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.fct_daily_stocks"
+[0m13:25:44.601910 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.fct_daily_stocks"
+[0m13:25:44.602836 [debug] [Thread-2 (]: On model.itm327.fct_daily_stocks: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.fct_daily_stocks"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.fct_daily_stocks
+         as
+        (-- fct_daily_stocks
+-- Fact table: one row per stock symbol per trading day.
+-- Grain: SYMBOL + TRADE_DATE
+--
+-- This is the central fact table for your data warehouse.
+-- It references dimension tables (dim_symbols, dim_weather_cities)
+-- and adds calculated metrics that marts can aggregate from.
+--
+-- TODO: Review columns and adjust any casting or renaming to match
+--       your raw data. Run `dbt run --select fct_daily_stocks` to build.
+
+SELECT
+    -- Keys (link to dimension tables)
+    s.SYMBOL,
+    s.TRADE_DATE,
+
+    -- Price metrics (from raw OHLCV)
+    s.OPEN,
+    s.HIGH,
+    s.LOW,
+    s.CLOSE,
+    s.VOLUME,
+
+    -- Derived price metrics (calculated here so marts don't repeat logic)
+    s.HIGH - s.LOW                                              AS DAILY_RANGE,
+    s.CLOSE - s.OPEN                                           AS DAILY_CHANGE,
+    ROUND((s.CLOSE - s.OPEN) / NULLIF(s.OPEN, 0) * 100, 4)   AS PCT_CHANGE,
+
+    -- Direction flag (useful for counting up/down days in marts)
+    CASE
+        WHEN s.CLOSE > s.OPEN THEN 'UP'
+        WHEN s.CLOSE < s.OPEN THEN 'DOWN'
+        ELSE 'FLAT'
+    END AS DIRECTION,
+
+    -- News coverage for this symbol on this day
+    COUNT(n.ID)                                                AS NEWS_ARTICLE_COUNT,
+    ARRAY_AGG(n.HEADLINE)                                      AS HEADLINES,
+    ARRAY_AGG(DISTINCT n.CATEGORY)                             AS NEWS_CATEGORIES
+
+FROM SNOWBEARAIR_DB.RAW.raw_stocks s
+LEFT JOIN SNOWBEARAIR_DB.RAW.raw_news n
+    ON  s.SYMBOL     = n.RELATED
+    AND s.TRADE_DATE = n.DATETIME::DATE
+
+GROUP BY
+    s.SYMBOL,
+    s.TRADE_DATE,
+    s.OPEN,
+    s.HIGH,
+    s.LOW,
+    s.CLOSE,
+    s.VOLUME
+        );
+[0m13:25:44.603565 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:45.532273 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c350a9-0108-3e84-001a-e3f3004730da
+[0m13:25:45.532991 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 17 at position 4
+invalid identifier 'S.TRADE_DATE'
+[0m13:25:45.537929 [debug] [Thread-2 (]: Database Error in model fct_daily_stocks (models/warehouse/fct_daily_stocks.sql)
+  000904 (42000): SQL compilation error: error line 17 at position 4
+  invalid identifier 'S.TRADE_DATE'
+  compiled code at /tmp/dbt/target/run/itm327/models/warehouse/fct_daily_stocks.sql
+[0m13:25:45.539437 [error] [Thread-2 (]: 8 of 13 ERROR creating sql table model RAW.fct_daily_stocks .................... [[31mERROR[0m in 0.96s]
+[0m13:25:45.540370 [debug] [Thread-2 (]: Finished running node model.itm327.fct_daily_stocks
+[0m13:25:45.541083 [debug] [Thread-2 (]: Began running node model.itm327.market_volatility_metrics
+[0m13:25:45.541799 [debug] [Thread-5 (]: Marking all children of 'model.itm327.fct_daily_stocks' to be skipped because of status 'error'.  Reason: Database Error in model fct_daily_stocks (models/warehouse/fct_daily_stocks.sql)
+  000904 (42000): SQL compilation error: error line 17 at position 4
+  invalid identifier 'S.TRADE_DATE'
+  compiled code at /tmp/dbt/target/run/itm327/models/warehouse/fct_daily_stocks.sql.
+[0m13:25:45.542607 [info ] [Thread-2 (]: 9 of 13 START python table model RAW.market_volatility_metrics ................. [RUN]
+[0m13:25:45.543891 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.fct_daily_stocks, now model.itm327.market_volatility_metrics)
+[0m13:25:45.544538 [debug] [Thread-2 (]: Began compiling node model.itm327.market_volatility_metrics
+[0m13:25:45.552503 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.market_volatility_metrics"
+[0m13:25:45.553478 [debug] [Thread-2 (]: Began executing node model.itm327.market_volatility_metrics
+[0m13:25:45.560538 [debug] [Thread-2 (]: Writing runtime python for node "model.itm327.market_volatility_metrics"
+[0m13:25:45.563798 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.market_volatility_metrics"
+[0m13:25:45.564997 [debug] [Thread-2 (]: On model.itm327.market_volatility_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.market_volatility_metrics"} */
+WITH market_volatility_metrics__dbt_sp AS PROCEDURE ()
+
+RETURNS STRING
+LANGUAGE PYTHON
+RUNTIME_VERSION = '3.9'
+PACKAGES = ('snowflake-snowpark-python')
+
+
+
+HANDLER = 'main'
+EXECUTE AS CALLER
+AS
+$$
+
+
+
+  
+    
+    
+from snowflake.snowpark.functions import col, avg, stddev, max as max_, min as min_, count, sum as sum_, lit
+from snowflake.snowpark.functions import when
+
+
+def model(dbt, session):
+    """
+    Snowpark Python model: per-symbol volatility and volume metrics.
+
+    Demonstrates dbt Python models using Snowpark DataFrames instead of SQL.
+    Useful for complex calculations that are verbose in SQL, such as
+    statistical measures (standard deviation) and conditional aggregations.
+
+    Output: one row per stock symbol summarizing its full history in the dataset.
+    """
+    # Reference staging models via dbt.ref() — same as ref() in SQL
+    stocks_df = dbt.ref('raw_stocks')
+
+    # Compute derived columns before aggregation
+    stocks_with_metrics = stocks_df.withColumn(
+        'DAILY_RANGE', col('HIGH') - col('LOW')
+    ).withColumn(
+        'DAILY_CHANGE', col('CLOSE') - col('OPEN')
+    ).withColumn(
+        'DAILY_RETURN_PCT', (col('CLOSE') - col('OPEN')) / col('OPEN') * lit(100)
+    )
+
+    # Aggregate per symbol across all trading days
+    summary = (
+        stocks_with_metrics
+        .groupBy('SYMBOL')
+        .agg(
+            count('TRADE_DATE').alias('TRADING_DAYS'),
+            min_('TRADE_DATE').alias('FIRST_TRADE_DATE'),
+            max_('TRADE_DATE').alias('LAST_TRADE_DATE'),
+            max_('HIGH').alias('PERIOD_HIGH'),
+            min_('LOW').alias('PERIOD_LOW'),
+            avg('CLOSE').alias('AVG_CLOSE'),
+            avg('VOLUME').alias('AVG_DAILY_VOLUME'),
+            sum_('VOLUME').alias('TOTAL_VOLUME'),
+            avg('DAILY_RANGE').alias('AVG_DAILY_RANGE'),
+            stddev('DAILY_RETURN_PCT').alias('RETURN_VOLATILITY'),
+            avg('DAILY_RETURN_PCT').alias('AVG_DAILY_RETURN_PCT'),
+            sum_(when(col('DAILY_CHANGE') > lit(0), lit(1)).otherwise(lit(0))).alias('UP_DAYS'),
+            sum_(when(col('DAILY_CHANGE') < lit(0), lit(1)).otherwise(lit(0))).alias('DOWN_DAYS'),
+        )
+    )
+
+    return summary
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_stocks": "SNOWBEARAIR_DB.RAW.raw_stocks"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "SNOWBEARAIR_DB"
+    schema = "RAW"
+    identifier = "market_volatility_metrics"
+    
+    def __repr__(self):
+        return 'SNOWBEARAIR_DB.RAW.market_volatility_metrics'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+
+
+def materialize(session, df, target_relation):
+    # make sure pandas exists
+    import importlib.util
+    package_name = 'pandas'
+    if importlib.util.find_spec(package_name):
+        import pandas
+        if isinstance(df, pandas.core.frame.DataFrame):
+          session.use_database(target_relation.database)
+          session.use_schema(target_relation.schema)
+          # session.write_pandas does not have overwrite function
+          df = session.createDataFrame(df)
+    
+    df.write.mode("overwrite").save_as_table('SNOWBEARAIR_DB.RAW.market_volatility_metrics', table_type='transient')
+
+def main(session):
+    dbt = dbtObj(session.table)
+    df = model(dbt, session)
+    materialize(session, df, dbt.this)
+    return "OK"
+
+  
+$$
+CALL market_volatility_metrics__dbt_sp();
+[0m13:25:45.565938 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:49.830491 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c350a9-0108-3e84-001a-e3f3004730f2
+[0m13:25:49.831780 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 100357 (P0000): Python Interpreter Error:
+Traceback (most recent call last):
+  File "_udf_code.py", line 129, in main
+    materialize(session, df, dbt.this)
+  File "_udf_code.py", line 124, in materialize
+    df.write.mode("overwrite").save_as_table('SNOWBEARAIR_DB.RAW.market_volatility_metrics', table_type='transient')
+  File "<site-packages>/snowflake/snowpark/_internal/telemetry.py", line 333, in wrap
+    result = func(*args, **kwargs)
+  File "<site-packages>/snowflake/snowpark/_internal/utils.py", line 1148, in call_wrapper
+    return func(*args, **kwargs)
+  File "<site-packages>/snowflake/snowpark/dataframe_writer.py", line 569, in save_as_table
+    snowflake_plan = session._analyzer.resolve(create_table_logic_plan)
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 952, in resolve
+    result = self.do_resolve(logical_plan)
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 1006, in do_resolve
+    res = self.do_resolve_with_resolved_children(
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 1229, in do_resolve_with_resolved_children
+    child_attributes=resolved_child.attributes,
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+    attributes = self._analyze_attributes()
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 327, in wrap
+    node.snowflake_plan.quoted_identifiers
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 585, in quoted_identifiers
+    return [attr.name for attr in self.attributes]
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+    attributes = self._analyze_attributes()
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 380, in wrap
+    raise ne.with_traceback(tb) from None
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 180, in wrap
+    return func(*args, **kwargs)
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 598, in _analyze_attributes
+    return analyze_attributes(
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 108, in analyze_attributes
+    attributes = session._get_result_attributes(sql, query_params)
+  File "<site-packages>/snowflake/snowpark/session.py", line 3151, in _get_result_attributes
+    return self._conn.get_result_attributes(query, query_params)
+  File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 277, in get_result_attributes
+    self._run_new_describe(self._cursor, query, query_params=query_params),
+  File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 288, in _run_new_describe
+    result_metadata = run_new_describe(cursor, query, query_params)
+  File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 177, in run_new_describe
+    return cursor._describe_internal(query, params=query_params)  # pyright: ignore
+  File "<site-packages>/snowflake/connector/cursor.py", line 1182, in _describe_internal
+    self.execute(*args, **kwargs)
+  File "<site-packages>/snowflake/connector/cursor.py", line 1142, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "<site-packages>/snowflake/connector/errors.py", line 286, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "<site-packages>/snowflake/connector/errors.py", line 341, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "<site-packages>/snowflake/connector/errors.py", line 217, in default_errorhandler
+    raise error_class(
+snowflake.snowpark.exceptions.SnowparkSQLException: (1304): 01c350a9-0108-3e84-001a-e3f300473112: 000904 (42000): SQL compilation error: error line 3 at position 10
+invalid identifier 'TRADE_DATE'
+There are existing quoted column identifiers: ['"ID"', '"SYMBOL"', '"DATETIME"', '"OPEN"', '"HIGH"', '"LOW"', '"CLOSE"', '"VOLUME"', '"DAILY_RANGE"', '"DAILY_CHANGE"', ...]. Please use one of them to reference the column. See more details on Snowflake identifier requirements https://docs.snowflake.com/en/sql-reference/identifiers-syntax
+ in function MARKET_VOLATILITY_METRICS__DBT_SP with handler main
+[0m13:25:49.838710 [debug] [Thread-2 (]: Database Error in model market_volatility_metrics (models/marts/market_volatility_metrics.py)
+  100357 (P0000): Python Interpreter Error:
+  Traceback (most recent call last):
+    File "_udf_code.py", line 129, in main
+      materialize(session, df, dbt.this)
+    File "_udf_code.py", line 124, in materialize
+      df.write.mode("overwrite").save_as_table('SNOWBEARAIR_DB.RAW.market_volatility_metrics', table_type='transient')
+    File "<site-packages>/snowflake/snowpark/_internal/telemetry.py", line 333, in wrap
+      result = func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/_internal/utils.py", line 1148, in call_wrapper
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/dataframe_writer.py", line 569, in save_as_table
+      snowflake_plan = session._analyzer.resolve(create_table_logic_plan)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 952, in resolve
+      result = self.do_resolve(logical_plan)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 1006, in do_resolve
+      res = self.do_resolve_with_resolved_children(
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 1229, in do_resolve_with_resolved_children
+      child_attributes=resolved_child.attributes,
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+      attributes = self._analyze_attributes()
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 327, in wrap
+      node.snowflake_plan.quoted_identifiers
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 585, in quoted_identifiers
+      return [attr.name for attr in self.attributes]
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+      attributes = self._analyze_attributes()
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 380, in wrap
+      raise ne.with_traceback(tb) from None
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 180, in wrap
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 598, in _analyze_attributes
+      return analyze_attributes(
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 108, in analyze_attributes
+      attributes = session._get_result_attributes(sql, query_params)
+    File "<site-packages>/snowflake/snowpark/session.py", line 3151, in _get_result_attributes
+      return self._conn.get_result_attributes(query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 277, in get_result_attributes
+      self._run_new_describe(self._cursor, query, query_params=query_params),
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 288, in _run_new_describe
+      result_metadata = run_new_describe(cursor, query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 177, in run_new_describe
+      return cursor._describe_internal(query, params=query_params)  # pyright: ignore
+    File "<site-packages>/snowflake/connector/cursor.py", line 1182, in _describe_internal
+      self.execute(*args, **kwargs)
+    File "<site-packages>/snowflake/connector/cursor.py", line 1142, in execute
+      Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+    File "<site-packages>/snowflake/connector/errors.py", line 286, in errorhandler_wrapper
+      handed_over = Error.hand_to_other_handler(
+    File "<site-packages>/snowflake/connector/errors.py", line 341, in hand_to_other_handler
+      cursor.errorhandler(connection, cursor, error_class, error_value)
+    File "<site-packages>/snowflake/connector/errors.py", line 217, in default_errorhandler
+      raise error_class(
+  snowflake.snowpark.exceptions.SnowparkSQLException: (1304): 01c350a9-0108-3e84-001a-e3f300473112: 000904 (42000): SQL compilation error: error line 3 at position 10
+  invalid identifier 'TRADE_DATE'
+  There are existing quoted column identifiers: ['"ID"', '"SYMBOL"', '"DATETIME"', '"OPEN"', '"HIGH"', '"LOW"', '"CLOSE"', '"VOLUME"', '"DAILY_RANGE"', '"DAILY_CHANGE"', ...]. Please use one of them to reference the column. See more details on Snowflake identifier requirements https://docs.snowflake.com/en/sql-reference/identifiers-syntax
+   in function MARKET_VOLATILITY_METRICS__DBT_SP with handler main
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/market_volatility_metrics.py
+[0m13:25:49.840505 [error] [Thread-2 (]: 9 of 13 ERROR creating python table model RAW.market_volatility_metrics ........ [[31mERROR[0m in 4.30s]
+[0m13:25:49.841678 [debug] [Thread-2 (]: Finished running node model.itm327.market_volatility_metrics
+[0m13:25:49.842417 [debug] [Thread-2 (]: Began running node model.itm327.dim_weather_cities
+[0m13:25:49.843667 [debug] [Thread-5 (]: Marking all children of 'model.itm327.market_volatility_metrics' to be skipped because of status 'error'.  Reason: Database Error in model market_volatility_metrics (models/marts/market_volatility_metrics.py)
+  100357 (P0000): Python Interpreter Error:
+  Traceback (most recent call last):
+    File "_udf_code.py", line 129, in main
+      materialize(session, df, dbt.this)
+    File "_udf_code.py", line 124, in materialize
+      df.write.mode("overwrite").save_as_table('SNOWBEARAIR_DB.RAW.market_volatility_metrics', table_type='transient')
+    File "<site-packages>/snowflake/snowpark/_internal/telemetry.py", line 333, in wrap
+      result = func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/_internal/utils.py", line 1148, in call_wrapper
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/dataframe_writer.py", line 569, in save_as_table
+      snowflake_plan = session._analyzer.resolve(create_table_logic_plan)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 952, in resolve
+      result = self.do_resolve(logical_plan)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 1006, in do_resolve
+      res = self.do_resolve_with_resolved_children(
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 1229, in do_resolve_with_resolved_children
+      child_attributes=resolved_child.attributes,
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+      attributes = self._analyze_attributes()
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 327, in wrap
+      node.snowflake_plan.quoted_identifiers
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 585, in quoted_identifiers
+      return [attr.name for attr in self.attributes]
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+      attributes = self._analyze_attributes()
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 380, in wrap
+      raise ne.with_traceback(tb) from None
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 180, in wrap
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 598, in _analyze_attributes
+      return analyze_attributes(
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 108, in analyze_attributes
+      attributes = session._get_result_attributes(sql, query_params)
+    File "<site-packages>/snowflake/snowpark/session.py", line 3151, in _get_result_attributes
+      return self._conn.get_result_attributes(query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 277, in get_result_attributes
+      self._run_new_describe(self._cursor, query, query_params=query_params),
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 288, in _run_new_describe
+      result_metadata = run_new_describe(cursor, query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 177, in run_new_describe
+      return cursor._describe_internal(query, params=query_params)  # pyright: ignore
+    File "<site-packages>/snowflake/connector/cursor.py", line 1182, in _describe_internal
+      self.execute(*args, **kwargs)
+    File "<site-packages>/snowflake/connector/cursor.py", line 1142, in execute
+      Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+    File "<site-packages>/snowflake/connector/errors.py", line 286, in errorhandler_wrapper
+      handed_over = Error.hand_to_other_handler(
+    File "<site-packages>/snowflake/connector/errors.py", line 341, in hand_to_other_handler
+      cursor.errorhandler(connection, cursor, error_class, error_value)
+    File "<site-packages>/snowflake/connector/errors.py", line 217, in default_errorhandler
+      raise error_class(
+  snowflake.snowpark.exceptions.SnowparkSQLException: (1304): 01c350a9-0108-3e84-001a-e3f300473112: 000904 (42000): SQL compilation error: error line 3 at position 10
+  invalid identifier 'TRADE_DATE'
+  There are existing quoted column identifiers: ['"ID"', '"SYMBOL"', '"DATETIME"', '"OPEN"', '"HIGH"', '"LOW"', '"CLOSE"', '"VOLUME"', '"DAILY_RANGE"', '"DAILY_CHANGE"', ...]. Please use one of them to reference the column. See more details on Snowflake identifier requirements https://docs.snowflake.com/en/sql-reference/identifiers-syntax
+   in function MARKET_VOLATILITY_METRICS__DBT_SP with handler main
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/market_volatility_metrics.py.
+[0m13:25:49.844839 [info ] [Thread-2 (]: 10 of 13 START sql table model RAW.dim_weather_cities .......................... [RUN]
+[0m13:25:49.845807 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.market_volatility_metrics, now model.itm327.dim_weather_cities)
+[0m13:25:49.846384 [debug] [Thread-2 (]: Began compiling node model.itm327.dim_weather_cities
+[0m13:25:49.852560 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.dim_weather_cities"
+[0m13:25:49.853563 [debug] [Thread-2 (]: Began executing node model.itm327.dim_weather_cities
+[0m13:25:49.860392 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.dim_weather_cities"
+[0m13:25:49.862501 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.dim_weather_cities"
+[0m13:25:49.863331 [debug] [Thread-2 (]: On model.itm327.dim_weather_cities: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.dim_weather_cities"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.dim_weather_cities
+         as
+        (-- dim_weather_cities
+-- Dimension table: one row per financial hub city tracked by the weather pipeline.
+--
+-- In your data warehouse, this acts as the "location" dimension —
+-- marts that analyze market performance by geography join against this table.
+--
+-- TODO: Add a city-to-exchange mapping if you want to associate each city with
+--       a specific stock exchange (e.g., New York → NYSE/NASDAQ, London → LSE).
+
+SELECT
+    CITY,
+
+    -- Date range this city appears in your weather data
+    MIN(DATE)   AS FIRST_OBSERVATION_DATE,
+    MAX(DATE)   AS LAST_OBSERVATION_DATE,
+    COUNT(*)    AS TOTAL_OBSERVATION_DAYS,
+
+    -- Typical conditions (descriptive stats across the full history)
+    ROUND(AVG(MAX_TEMP), 2)   AS AVG_MAX_TEMP,
+    ROUND(AVG(MIN_TEMP), 2)   AS AVG_MIN_TEMP,
+    ROUND(AVG(PRECIP), 2)     AS AVG_DAILY_PRECIP,
+    ROUND(AVG(MAX_WIND), 2)   AS AVG_MAX_WIND,
+
+    -- Extreme conditions
+    MAX(MAX_TEMP)             AS HOTTEST_DAY_TEMP,
+    MIN(MIN_TEMP)             AS COLDEST_DAY_TEMP,
+    MAX(PRECIP)               AS WETTEST_DAY_PRECIP
+
+FROM SNOWBEARAIR_DB.RAW.raw_weather
+GROUP BY CITY
+        );
+[0m13:25:49.864024 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:51.714536 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.850 seconds
+[0m13:25:51.718079 [info ] [Thread-2 (]: 10 of 13 OK created sql table model RAW.dim_weather_cities ..................... [[32mSUCCESS 1[0m in 1.87s]
+[0m13:25:51.719116 [debug] [Thread-2 (]: Finished running node model.itm327.dim_weather_cities
+[0m13:25:51.719855 [debug] [Thread-2 (]: Began running node model.itm327.fct_daily_weather
+[0m13:25:51.720724 [info ] [Thread-2 (]: 11 of 13 START sql table model RAW.fct_daily_weather ........................... [RUN]
+[0m13:25:51.721437 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.dim_weather_cities, now model.itm327.fct_daily_weather)
+[0m13:25:51.721989 [debug] [Thread-2 (]: Began compiling node model.itm327.fct_daily_weather
+[0m13:25:51.730716 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.fct_daily_weather"
+[0m13:25:51.731627 [debug] [Thread-2 (]: Began executing node model.itm327.fct_daily_weather
+[0m13:25:51.738275 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.fct_daily_weather"
+[0m13:25:51.739782 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.fct_daily_weather"
+[0m13:25:51.740462 [debug] [Thread-2 (]: On model.itm327.fct_daily_weather: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.fct_daily_weather"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.fct_daily_weather
+         as
+        (-- fct_daily_weather
+-- Fact table: one row per city per observation day.
+-- Grain: CITY + DATE
+--
+-- Accepts weather readings from staging into the warehouse layer.
+-- Marts that need weather data must reference this table via ref(),
+-- not reach back to the raw_weather staging view directly.
+--
+-- TODO: If your weather pipeline adds new columns (e.g., humidity,
+--       UV index), add them here so marts inherit them automatically.
+
+SELECT
+    DATE,
+    CITY,
+    MAX_TEMP,
+    MIN_TEMP,
+    PRECIP,
+    MAX_WIND
+
+FROM SNOWBEARAIR_DB.RAW.raw_weather
+        );
+[0m13:25:51.741040 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:53.307216 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.566 seconds
+[0m13:25:53.310720 [info ] [Thread-2 (]: 11 of 13 OK created sql table model RAW.fct_daily_weather ...................... [[32mSUCCESS 1[0m in 1.59s]
+[0m13:25:53.311660 [debug] [Thread-2 (]: Finished running node model.itm327.fct_daily_weather
+[0m13:25:53.312364 [debug] [Thread-2 (]: Began running node model.itm327.stock_news_daily
+[0m13:25:53.313340 [info ] [Thread-2 (]: 12 of 13 SKIP relation RAW.stock_news_daily .................................... [[33mSKIP[0m]
+[0m13:25:53.313975 [debug] [Thread-2 (]: Finished running node model.itm327.stock_news_daily
+[0m13:25:53.314591 [debug] [Thread-2 (]: Began running node model.itm327.weather_market_conditions
+[0m13:25:53.315309 [info ] [Thread-2 (]: 13 of 13 SKIP relation RAW.weather_market_conditions ........................... [[33mSKIP[0m]
+[0m13:25:53.315963 [debug] [Thread-2 (]: Finished running node model.itm327.weather_market_conditions
+[0m13:25:53.318657 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m13:25:53.319204 [debug] [Dummy-1   ]: Connection 'list_SNOWBEARAIR_DB' was properly closed.
+[0m13:25:53.319732 [debug] [Dummy-1   ]: Connection 'model.itm327.fct_daily_weather' was properly closed.
+[0m13:25:53.320408 [info ] [Dummy-1   ]: 
+[0m13:25:53.320924 [info ] [Dummy-1   ]: Finished running 10 table models, 3 view models in 0 hours 0 minutes and 21.33 seconds (21.33s).
+[0m13:25:53.324154 [debug] [Dummy-1   ]: Command end result
+[0m13:25:53.364796 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m13:25:53.367544 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m13:25:53.376393 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m13:25:53.376976 [info ] [Dummy-1   ]: 
+[0m13:25:53.377642 [info ] [Dummy-1   ]: [31mCompleted with 6 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:25:53.378148 [info ] [Dummy-1   ]: 
+[0m13:25:53.378891 [error] [Dummy-1   ]:   Database Error in model DataScientistMart (models/marts/DataScientistMart.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 57 at position 0 unexpected ';'.
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/DataScientistMart.sql
+[0m13:25:53.379395 [info ] [Dummy-1   ]: 
+[0m13:25:53.380025 [error] [Dummy-1   ]:   Database Error in model DataScientistsMart (models/marts/DataScientistsMart.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 57 at position 0 unexpected ';'.
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/DataScientistsMart.sql
+[0m13:25:53.380498 [info ] [Dummy-1   ]: 
+[0m13:25:53.381639 [error] [Dummy-1   ]:   Database Error in model DataAnalystMart (models/marts/DataAnalystMart.py)
+  100357 (P0000): Python Interpreter Error:
+  Traceback (most recent call last):
+    File "_udf_code.py", line 159, in main
+      df = model(dbt, session)
+    File "_udf_code.py", line 80, in model
+      stock_summary['SYMBOL'] == news_summary['RELATED'],
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 1504, in __getitem__
+      return self.col(item, _emit_ast=_emit_ast)
+    File "<site-packages>/snowflake/snowpark/_internal/utils.py", line 1142, in call_wrapper
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 1552, in col
+      return Column(self._resolve(col_name), _ast=expr)
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 6699, in _resolve
+      lambda attr: quote_name(attr.name) == normalized_col_name, self._output
+    File "<stdlib>/functools.py", line 993, in __get__
+      val = self.func(instance)
+    File "<site-packages>/snowflake/snowpark/dataframe.py", line 6720, in _output
+      self._select_statement.column_states.projection
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/select_statement.py", line 1002, in column_states
+      self.column_states = self.from_.column_states
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/select_statement.py", line 482, in column_states
+      column_attrs = self.snowflake_plan.attributes
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+      attributes = self._analyze_attributes()
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 380, in wrap
+      raise ne.with_traceback(tb) from None
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 180, in wrap
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 598, in _analyze_attributes
+      return analyze_attributes(
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 108, in analyze_attributes
+      attributes = session._get_result_attributes(sql, query_params)
+    File "<site-packages>/snowflake/snowpark/session.py", line 3151, in _get_result_attributes
+      return self._conn.get_result_attributes(query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 277, in get_result_attributes
+      self._run_new_describe(self._cursor, query, query_params=query_params),
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 288, in _run_new_describe
+      result_metadata = run_new_describe(cursor, query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 177, in run_new_describe
+      return cursor._describe_internal(query, params=query_params)  # pyright: ignore
+    File "<site-packages>/snowflake/connector/cursor.py", line 1182, in _describe_internal
+      self.execute(*args, **kwargs)
+    File "<site-packages>/snowflake/connector/cursor.py", line 1142, in execute
+      Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+    File "<site-packages>/snowflake/connector/errors.py", line 286, in errorhandler_wrapper
+      handed_over = Error.hand_to_other_handler(
+    File "<site-packages>/snowflake/connector/errors.py", line 341, in hand_to_other_handler
+      cursor.errorhandler(connection, cursor, error_class, error_value)
+    File "<site-packages>/snowflake/connector/errors.py", line 217, in default_errorhandler
+      raise error_class(
+  snowflake.snowpark.exceptions.SnowparkSQLException: (1304): 01c350a9-0108-3e84-001a-e3f3004730a2: 000904 (42000): SQL compilation error: error line 3 at position 10
+  invalid identifier 'TRADE_DATE'
+  There are existing quoted column identifiers: ['"ID"', '"SYMBOL"', '"DATETIME"', '"OPEN"', '"HIGH"', '"LOW"', '"CLOSE"', '"VOLUME"', '"DAILY_RANGE"', '"DAILY_CHANGE"', ...]. Please use one of them to reference the column. See more details on Snowflake identifier requirements https://docs.snowflake.com/en/sql-reference/identifiers-syntax
+   in function DATAANALYSTMART__DBT_SP with handler main
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/DataAnalystMart.py
+[0m13:25:53.382423 [info ] [Dummy-1   ]: 
+[0m13:25:53.383015 [error] [Dummy-1   ]:   Database Error in model dim_symbols (models/warehouse/dim_symbols.sql)
+  000904 (42000): SQL compilation error: error line 17 at position 8
+  invalid identifier 'TRADE_DATE'
+  compiled code at /tmp/dbt/target/run/itm327/models/warehouse/dim_symbols.sql
+[0m13:25:53.383482 [info ] [Dummy-1   ]: 
+[0m13:25:53.384091 [error] [Dummy-1   ]:   Database Error in model fct_daily_stocks (models/warehouse/fct_daily_stocks.sql)
+  000904 (42000): SQL compilation error: error line 17 at position 4
+  invalid identifier 'S.TRADE_DATE'
+  compiled code at /tmp/dbt/target/run/itm327/models/warehouse/fct_daily_stocks.sql
+[0m13:25:53.384564 [info ] [Dummy-1   ]: 
+[0m13:25:53.385704 [error] [Dummy-1   ]:   Database Error in model market_volatility_metrics (models/marts/market_volatility_metrics.py)
+  100357 (P0000): Python Interpreter Error:
+  Traceback (most recent call last):
+    File "_udf_code.py", line 129, in main
+      materialize(session, df, dbt.this)
+    File "_udf_code.py", line 124, in materialize
+      df.write.mode("overwrite").save_as_table('SNOWBEARAIR_DB.RAW.market_volatility_metrics', table_type='transient')
+    File "<site-packages>/snowflake/snowpark/_internal/telemetry.py", line 333, in wrap
+      result = func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/_internal/utils.py", line 1148, in call_wrapper
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/dataframe_writer.py", line 569, in save_as_table
+      snowflake_plan = session._analyzer.resolve(create_table_logic_plan)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 952, in resolve
+      result = self.do_resolve(logical_plan)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 1006, in do_resolve
+      res = self.do_resolve_with_resolved_children(
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/analyzer.py", line 1229, in do_resolve_with_resolved_children
+      child_attributes=resolved_child.attributes,
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+      attributes = self._analyze_attributes()
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 327, in wrap
+      node.snowflake_plan.quoted_identifiers
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 585, in quoted_identifiers
+      return [attr.name for attr in self.attributes]
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 609, in attributes
+      attributes = self._analyze_attributes()
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 380, in wrap
+      raise ne.with_traceback(tb) from None
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 180, in wrap
+      return func(*args, **kwargs)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/snowflake_plan.py", line 598, in _analyze_attributes
+      return analyze_attributes(
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 108, in analyze_attributes
+      attributes = session._get_result_attributes(sql, query_params)
+    File "<site-packages>/snowflake/snowpark/session.py", line 3151, in _get_result_attributes
+      return self._conn.get_result_attributes(query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 277, in get_result_attributes
+      self._run_new_describe(self._cursor, query, query_params=query_params),
+    File "<site-packages>/snowflake/snowpark/_internal/server_connection.py", line 288, in _run_new_describe
+      result_metadata = run_new_describe(cursor, query, query_params)
+    File "<site-packages>/snowflake/snowpark/_internal/analyzer/schema_utils.py", line 177, in run_new_describe
+      return cursor._describe_internal(query, params=query_params)  # pyright: ignore
+    File "<site-packages>/snowflake/connector/cursor.py", line 1182, in _describe_internal
+      self.execute(*args, **kwargs)
+    File "<site-packages>/snowflake/connector/cursor.py", line 1142, in execute
+      Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+    File "<site-packages>/snowflake/connector/errors.py", line 286, in errorhandler_wrapper
+      handed_over = Error.hand_to_other_handler(
+    File "<site-packages>/snowflake/connector/errors.py", line 341, in hand_to_other_handler
+      cursor.errorhandler(connection, cursor, error_class, error_value)
+    File "<site-packages>/snowflake/connector/errors.py", line 217, in default_errorhandler
+      raise error_class(
+  snowflake.snowpark.exceptions.SnowparkSQLException: (1304): 01c350a9-0108-3e84-001a-e3f300473112: 000904 (42000): SQL compilation error: error line 3 at position 10
+  invalid identifier 'TRADE_DATE'
+  There are existing quoted column identifiers: ['"ID"', '"SYMBOL"', '"DATETIME"', '"OPEN"', '"HIGH"', '"LOW"', '"CLOSE"', '"VOLUME"', '"DAILY_RANGE"', '"DAILY_CHANGE"', ...]. Please use one of them to reference the column. See more details on Snowflake identifier requirements https://docs.snowflake.com/en/sql-reference/identifiers-syntax
+   in function MARKET_VOLATILITY_METRICS__DBT_SP with handler main
+  compiled code at /tmp/dbt/target/run/itm327/models/marts/market_volatility_metrics.py
+[0m13:25:53.386520 [info ] [Dummy-1   ]: 
+[0m13:25:53.387031 [info ] [Dummy-1   ]: Done. PASS=5 WARN=0 ERROR=6 SKIP=2 TOTAL=13
+[0m13:25:53.389149 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 23.087296, "process_in_blocks": "0", "process_kernel_time": 1.05, "process_mem_max_rss": "428864", "process_out_blocks": "0", "process_user_time": 5.97}
+[0m13:25:53.389850 [debug] [Dummy-1   ]: Command `cli run` failed at 13:25:53.389583 after 23.09 seconds
+[0m13:25:53.390412 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 13:32:09.057213 | 012c8bcc-0c3e-4435-a265-5c1857d8d098 ==============================
+[0m13:32:09.057213 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m13:32:09.058329 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'log_format': 'default', 'introspect': 'True', 'target_path': '/tmp/dbt/target/', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m13:32:09.434481 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m13:32:09.997975 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m13:32:10.387352 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m13:32:10.388543 [debug] [Dummy-1   ]: Partial parsing: updated file: itm327://models/staging/raw_stocks.sql
+[0m13:32:10.389255 [debug] [Dummy-1   ]: Partial parsing: updated file: itm327://models/marts/DataScientistsMart.sql
+[0m13:32:10.389875 [debug] [Dummy-1   ]: Partial parsing: updated file: itm327://models/marts/DataScientistMart.sql
+[0m13:32:11.028539 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m13:32:11.031493 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m13:32:11.089035 [info ] [Dummy-1   ]: Found 13 models, 19 data tests, 3 sources, 476 macros
+[0m13:32:11.092822 [info ] [Dummy-1   ]: 
+[0m13:32:11.093466 [info ] [Dummy-1   ]: Concurrency: 1 threads (target='dev')
+[0m13:32:11.093945 [info ] [Dummy-1   ]: 
+[0m13:32:11.094776 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m13:32:11.103175 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SNOWBEARAIR_DB'
+[0m13:32:11.211070 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB"
+[0m13:32:11.211788 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB"} */
+show terse schemas in database SNOWBEARAIR_DB
+    limit 10000
+[0m13:32:11.212315 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:32:12.038295 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 0.826 seconds
+[0m13:32:12.044094 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SNOWBEARAIR_DB_RAW'
+[0m13:32:12.061992 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB_RAW"
+[0m13:32:12.062633 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB_RAW"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m13:32:12.063143 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:32:12.844579 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.781 seconds
+[0m13:32:12.850574 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB_RAW"
+[0m13:32:12.851213 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB_RAW"} */
+show objects in SNOWBEARAIR_DB.RAW
+    limit 10000
+    
+;
+[0m13:32:13.161484 [debug] [ThreadPool]: SQL status: SUCCESS 122 in 0.310 seconds
+[0m13:32:13.168875 [debug] [ThreadPool]: Using snowflake connection "list_SNOWBEARAIR_DB_RAW"
+[0m13:32:13.169535 [debug] [ThreadPool]: On list_SNOWBEARAIR_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "connection_name": "list_SNOWBEARAIR_DB_RAW"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m13:32:13.305481 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.135 seconds
+[0m13:32:13.352036 [debug] [Thread-2 (]: Began running node model.itm327.DataScientistMart
+[0m13:32:13.353016 [info ] [Thread-2 (]: 1 of 13 START sql table model RAW.DataScientistMart ............................ [RUN]
+[0m13:32:13.353817 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_SNOWBEARAIR_DB_RAW, now model.itm327.DataScientistMart)
+[0m13:32:13.354715 [debug] [Thread-2 (]: Began compiling node model.itm327.DataScientistMart
+[0m13:32:13.365204 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.DataScientistMart"
+[0m13:32:13.366156 [debug] [Thread-2 (]: Began executing node model.itm327.DataScientistMart
+[0m13:32:13.412852 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.DataScientistMart"
+[0m13:32:13.416161 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.DataScientistMart"
+[0m13:32:13.417056 [debug] [Thread-2 (]: On model.itm327.DataScientistMart: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.DataScientistMart"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.DataScientistMart
+         as
+        (-- show stock data alongside weather data
+
+WITH weather_pivot AS (
+    SELECT
+        date,
+
+        -- New York
+        MAX(CASE WHEN city = 'New York' THEN max_temp END) AS ny_max_temp,
+        MAX(CASE WHEN city = 'New York' THEN min_temp END) AS ny_min_temp,
+        MAX(CASE WHEN city = 'New York' THEN max_wind END) AS ny_max_wind,
+        MAX(CASE WHEN city = 'New York' THEN precip END) AS ny_precip,
+
+        -- London
+        MAX(CASE WHEN city = 'London' THEN max_temp END) AS london_max_temp,
+        MAX(CASE WHEN city = 'London' THEN min_temp END) AS london_min_temp,
+        MAX(CASE WHEN city = 'London' THEN max_wind END) AS london_max_wind,
+        MAX(CASE WHEN city = 'London' THEN precip END) AS london_precip,
+
+        -- Tokyo
+        MAX(CASE WHEN city = 'Tokyo' THEN max_temp END) AS tokyo_max_temp,
+        MAX(CASE WHEN city = 'Tokyo' THEN min_temp END) AS tokyo_min_temp,
+        MAX(CASE WHEN city = 'Tokyo' THEN max_wind END) AS tokyo_max_wind,
+        MAX(CASE WHEN city = 'Tokyo' THEN precip END) AS tokyo_precip
+
+    FROM snowbearair_db.raw.weather_api_evans_e
+    GROUP BY date
+)
+
+SELECT
+    s.symbol,
+    CAST(s.datetime AS DATE) AS date,
+    s.open,
+    s.high,
+    s.low,
+    s.close,
+
+    w.ny_max_temp,
+    w.ny_min_temp,
+    w.ny_max_wind,
+    w.ny_precip,
+
+    w.london_max_temp,
+    w.london_min_temp,
+    w.london_max_wind,
+    w.london_precip,
+
+    w.tokyo_max_temp,
+    w.tokyo_min_temp,
+    w.tokyo_max_wind,
+    w.tokyo_precip
+
+FROM snowbearair_db.raw.stonks s
+LEFT JOIN weather_pivot w
+    ON CAST(s.datetime AS DATE) = w.date
+        );
+[0m13:32:13.417801 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:16.270381 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.852 seconds
+[0m13:32:16.302859 [info ] [Thread-2 (]: 1 of 13 OK created sql table model RAW.DataScientistMart ....................... [[32mSUCCESS 1[0m in 2.95s]
+[0m13:32:16.303910 [debug] [Thread-2 (]: Finished running node model.itm327.DataScientistMart
+[0m13:32:16.304651 [debug] [Thread-2 (]: Began running node model.itm327.DataScientistsMart
+[0m13:32:16.305657 [info ] [Thread-2 (]: 2 of 13 START sql table model RAW.DataScientistsMart ........................... [RUN]
+[0m13:32:16.306435 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.DataScientistMart, now model.itm327.DataScientistsMart)
+[0m13:32:16.307028 [debug] [Thread-2 (]: Began compiling node model.itm327.DataScientistsMart
+[0m13:32:16.313973 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.DataScientistsMart"
+[0m13:32:16.314912 [debug] [Thread-2 (]: Began executing node model.itm327.DataScientistsMart
+[0m13:32:16.321650 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.DataScientistsMart"
+[0m13:32:16.324896 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.DataScientistsMart"
+[0m13:32:16.325746 [debug] [Thread-2 (]: On model.itm327.DataScientistsMart: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.DataScientistsMart"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.DataScientistsMart
+         as
+        (-- show stock data alongside weather data
+
+WITH weather_pivot AS (
+    SELECT
+        date,
+
+        -- New York
+        MAX(CASE WHEN city = 'New York' THEN max_temp END) AS ny_max_temp,
+        MAX(CASE WHEN city = 'New York' THEN min_temp END) AS ny_min_temp,
+        MAX(CASE WHEN city = 'New York' THEN max_wind END) AS ny_max_wind,
+        MAX(CASE WHEN city = 'New York' THEN precip END) AS ny_precip,
+
+        -- London
+        MAX(CASE WHEN city = 'London' THEN max_temp END) AS london_max_temp,
+        MAX(CASE WHEN city = 'London' THEN min_temp END) AS london_min_temp,
+        MAX(CASE WHEN city = 'London' THEN max_wind END) AS london_max_wind,
+        MAX(CASE WHEN city = 'London' THEN precip END) AS london_precip,
+
+        -- Tokyo
+        MAX(CASE WHEN city = 'Tokyo' THEN max_temp END) AS tokyo_max_temp,
+        MAX(CASE WHEN city = 'Tokyo' THEN min_temp END) AS tokyo_min_temp,
+        MAX(CASE WHEN city = 'Tokyo' THEN max_wind END) AS tokyo_max_wind,
+        MAX(CASE WHEN city = 'Tokyo' THEN precip END) AS tokyo_precip
+
+    FROM snowbearair_db.raw.weather_api_evans_e
+    GROUP BY date
+)
+
+SELECT
+    s.symbol,
+    CAST(s.datetime AS DATE) AS date,
+    s.open,
+    s.high,
+    s.low,
+    s.close,
+
+    w.ny_max_temp,
+    w.ny_min_temp,
+    w.ny_max_wind,
+    w.ny_precip,
+
+    w.london_max_temp,
+    w.london_min_temp,
+    w.london_max_wind,
+    w.london_precip,
+
+    w.tokyo_max_temp,
+    w.tokyo_min_temp,
+    w.tokyo_max_wind,
+    w.tokyo_precip
+
+FROM snowbearair_db.raw.stonks s
+LEFT JOIN weather_pivot w
+    ON CAST(s.datetime AS DATE) = w.date
+        );
+[0m13:32:16.326478 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:18.207599 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.881 seconds
+[0m13:32:18.211459 [info ] [Thread-2 (]: 2 of 13 OK created sql table model RAW.DataScientistsMart ...................... [[32mSUCCESS 1[0m in 1.90s]
+[0m13:32:18.212425 [debug] [Thread-2 (]: Finished running node model.itm327.DataScientistsMart
+[0m13:32:18.213129 [debug] [Thread-2 (]: Began running node model.itm327.raw_news
+[0m13:32:18.214016 [info ] [Thread-2 (]: 3 of 13 START sql view model RAW.raw_news ...................................... [RUN]
+[0m13:32:18.214737 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.DataScientistsMart, now model.itm327.raw_news)
+[0m13:32:18.215293 [debug] [Thread-2 (]: Began compiling node model.itm327.raw_news
+[0m13:32:18.221326 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.raw_news"
+[0m13:32:18.222263 [debug] [Thread-2 (]: Began executing node model.itm327.raw_news
+[0m13:32:18.268266 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.raw_news"
+[0m13:32:18.269785 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.raw_news"
+[0m13:32:18.270468 [debug] [Thread-2 (]: On model.itm327.raw_news: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.raw_news"} */
+create or replace   view SNOWBEARAIR_DB.RAW.raw_news
+  
+   as (
+    -- TODO: Update the source table name to match your prefix (e.g., SMITHJ_NEWS)
+select *
+from SNOWBEARAIR_DB.RAW.SFTP_API_EVANS_E
+  );
+[0m13:32:18.271030 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:19.965978 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.695 seconds
+[0m13:32:19.973084 [info ] [Thread-2 (]: 3 of 13 OK created sql view model RAW.raw_news ................................. [[32mSUCCESS 1[0m in 1.76s]
+[0m13:32:19.974023 [debug] [Thread-2 (]: Finished running node model.itm327.raw_news
+[0m13:32:19.974725 [debug] [Thread-2 (]: Began running node model.itm327.raw_stocks
+[0m13:32:19.975663 [info ] [Thread-2 (]: 4 of 13 START sql view model RAW.raw_stocks .................................... [RUN]
+[0m13:32:19.976405 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.raw_news, now model.itm327.raw_stocks)
+[0m13:32:19.976973 [debug] [Thread-2 (]: Began compiling node model.itm327.raw_stocks
+[0m13:32:19.985023 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.raw_stocks"
+[0m13:32:19.985921 [debug] [Thread-2 (]: Began executing node model.itm327.raw_stocks
+[0m13:32:19.992647 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.raw_stocks"
+[0m13:32:19.993948 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.raw_stocks"
+[0m13:32:19.994575 [debug] [Thread-2 (]: On model.itm327.raw_stocks: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.raw_stocks"} */
+create or replace   view SNOWBEARAIR_DB.RAW.raw_stocks
+  
+   as (
+    -- TODO: Update the source table name to match your prefix (e.g., SMITHJ_STOCKS)
+select *, CAST(DATETIME AS DATE) AS TRADE_DATE
+from SNOWBEARAIR_DB.RAW.STONKS
+  );
+[0m13:32:19.995135 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:21.017472 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.022 seconds
+[0m13:32:21.021385 [info ] [Thread-2 (]: 4 of 13 OK created sql view model RAW.raw_stocks ............................... [[32mSUCCESS 1[0m in 1.04s]
+[0m13:32:21.022324 [debug] [Thread-2 (]: Finished running node model.itm327.raw_stocks
+[0m13:32:21.023023 [debug] [Thread-2 (]: Began running node model.itm327.raw_weather
+[0m13:32:21.024192 [info ] [Thread-2 (]: 5 of 13 START sql view model RAW.raw_weather ................................... [RUN]
+[0m13:32:21.024922 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.raw_stocks, now model.itm327.raw_weather)
+[0m13:32:21.025518 [debug] [Thread-2 (]: Began compiling node model.itm327.raw_weather
+[0m13:32:21.031391 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.raw_weather"
+[0m13:32:21.032309 [debug] [Thread-2 (]: Began executing node model.itm327.raw_weather
+[0m13:32:21.039073 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.raw_weather"
+[0m13:32:21.040348 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.raw_weather"
+[0m13:32:21.040991 [debug] [Thread-2 (]: On model.itm327.raw_weather: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.raw_weather"} */
+create or replace   view SNOWBEARAIR_DB.RAW.raw_weather
+  
+   as (
+    -- TODO: Update the source table name to match your prefix (e.g., SMITHJ_WEATHER)
+select *
+from SNOWBEARAIR_DB.RAW.WEATHER_API_EVANS_E
+  );
+[0m13:32:21.041555 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:21.891748 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.850 seconds
+[0m13:32:21.895268 [info ] [Thread-2 (]: 5 of 13 OK created sql view model RAW.raw_weather .............................. [[32mSUCCESS 1[0m in 0.87s]
+[0m13:32:21.896214 [debug] [Thread-2 (]: Finished running node model.itm327.raw_weather
+[0m13:32:21.896924 [debug] [Thread-2 (]: Began running node model.itm327.DataAnalystMart
+[0m13:32:21.898156 [info ] [Thread-2 (]: 6 of 13 START python table model RAW.DataAnalystMart ........................... [RUN]
+[0m13:32:21.899038 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.raw_weather, now model.itm327.DataAnalystMart)
+[0m13:32:21.899638 [debug] [Thread-2 (]: Began compiling node model.itm327.DataAnalystMart
+[0m13:32:21.936086 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.DataAnalystMart"
+[0m13:32:21.937064 [debug] [Thread-2 (]: Began executing node model.itm327.DataAnalystMart
+[0m13:32:21.946979 [debug] [Thread-2 (]: Writing runtime python for node "model.itm327.DataAnalystMart"
+[0m13:32:21.950291 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.DataAnalystMart"
+[0m13:32:21.951588 [debug] [Thread-2 (]: On model.itm327.DataAnalystMart: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.DataAnalystMart"} */
+WITH DataAnalystMart__dbt_sp AS PROCEDURE ()
+
+RETURNS STRING
+LANGUAGE PYTHON
+RUNTIME_VERSION = '3.9'
+PACKAGES = ('snowflake-snowpark-python')
+
+
+
+HANDLER = 'main'
+EXECUTE AS CALLER
+AS
+$$
+
+
+
+  
+    
+    
+# show stock data alongside news data
+
+from snowflake.snowpark.functions import (
+    col, avg, stddev, max as max_, min as min_,
+    count, sum as sum_, lit, when, to_date
+)
+
+
+def model(dbt, session):
+    """
+    Snowpark Python model:
+    one row per stock symbol with both trading + news stats.
+    """
+
+    # =========================
+    # STOCK DATA
+    # =========================
+    stocks_df = dbt.ref('raw_stocks')
+
+    stocks_with_metrics = stocks_df.withColumn(
+        'DAILY_RANGE', col('HIGH') - col('LOW')
+    ).withColumn(
+        'DAILY_CHANGE', col('CLOSE') - col('OPEN')
+    ).withColumn(
+        'DAILY_RETURN_PCT', (col('CLOSE') - col('OPEN')) / col('OPEN') * lit(100)
+    )
+
+    stock_summary = (
+        stocks_with_metrics
+        .groupBy('SYMBOL')
+        .agg(
+            count('TRADE_DATE').alias('TRADING_DAYS'),
+            min_('TRADE_DATE').alias('FIRST_TRADE_DATE'),
+            max_('TRADE_DATE').alias('LAST_TRADE_DATE'),
+            max_('HIGH').alias('PERIOD_HIGH'),
+            min_('LOW').alias('PERIOD_LOW'),
+            avg('CLOSE').alias('AVG_CLOSE'),
+            avg('VOLUME').alias('AVG_DAILY_VOLUME'),
+            sum_('VOLUME').alias('TOTAL_VOLUME'),
+            avg('DAILY_RANGE').alias('AVG_DAILY_RANGE'),
+            stddev('DAILY_RETURN_PCT').alias('RETURN_VOLATILITY'),
+            avg('DAILY_RETURN_PCT').alias('AVG_DAILY_RETURN_PCT'),
+            sum_(when(col('DAILY_CHANGE') > lit(0), lit(1)).otherwise(lit(0))).alias('UP_DAYS'),
+            sum_(when(col('DAILY_CHANGE') < lit(0), lit(1)).otherwise(lit(0))).alias('DOWN_DAYS'),
+        )
+    )
+
+    # =========================
+    # NEWS DATA 
+    # =========================
+    news_df = dbt.ref('raw_news')
+
+    news_with_date = news_df.withColumn(
+        'NEWS_DATE', to_date(col('DATETIME'))
+    )
+
+    news_summary = (
+        news_with_date
+        .groupBy('RELATED')
+        .agg(
+            count('*').alias('TOTAL_ARTICLES'),
+            count('NEWS_DATE').alias('ARTICLE_DAYS')
+        )
+    )
+
+    # =========================
+    # JOIN DATA
+    # =========================
+    final_df = (
+        stock_summary
+        .join(
+            news_summary,
+            stock_summary['SYMBOL'] == news_summary['RELATED'],
+            how='left'
+        )
+        .drop('RELATED')  # avoid duplicate column
+    )
+
+    return final_df
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_news": "SNOWBEARAIR_DB.RAW.raw_news", "raw_stocks": "SNOWBEARAIR_DB.RAW.raw_stocks"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "SNOWBEARAIR_DB"
+    schema = "RAW"
+    identifier = "DataAnalystMart"
+    
+    def __repr__(self):
+        return 'SNOWBEARAIR_DB.RAW.DataAnalystMart'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+
+
+def materialize(session, df, target_relation):
+    # make sure pandas exists
+    import importlib.util
+    package_name = 'pandas'
+    if importlib.util.find_spec(package_name):
+        import pandas
+        if isinstance(df, pandas.core.frame.DataFrame):
+          session.use_database(target_relation.database)
+          session.use_schema(target_relation.schema)
+          # session.write_pandas does not have overwrite function
+          df = session.createDataFrame(df)
+    
+    df.write.mode("overwrite").save_as_table('SNOWBEARAIR_DB.RAW.DataAnalystMart', table_type='transient')
+
+def main(session):
+    dbt = dbtObj(session.table)
+    df = model(dbt, session)
+    materialize(session, df, dbt.this)
+    return "OK"
+
+  
+$$
+CALL DataAnalystMart__dbt_sp();
+[0m13:32:21.952552 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:28.823161 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 6.870 seconds
+[0m13:32:28.827160 [info ] [Thread-2 (]: 6 of 13 OK created python table model RAW.DataAnalystMart ...................... [[32mSUCCESS 1[0m in 6.93s]
+[0m13:32:28.828140 [debug] [Thread-2 (]: Finished running node model.itm327.DataAnalystMart
+[0m13:32:28.829548 [debug] [Thread-2 (]: Began running node model.itm327.dim_symbols
+[0m13:32:28.830507 [info ] [Thread-2 (]: 7 of 13 START sql table model RAW.dim_symbols .................................. [RUN]
+[0m13:32:28.831289 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.DataAnalystMart, now model.itm327.dim_symbols)
+[0m13:32:28.831895 [debug] [Thread-2 (]: Began compiling node model.itm327.dim_symbols
+[0m13:32:28.837953 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.dim_symbols"
+[0m13:32:28.839051 [debug] [Thread-2 (]: Began executing node model.itm327.dim_symbols
+[0m13:32:28.845809 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.dim_symbols"
+[0m13:32:28.847596 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.dim_symbols"
+[0m13:32:28.848421 [debug] [Thread-2 (]: On model.itm327.dim_symbols: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.dim_symbols"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.dim_symbols
+         as
+        (-- dim_symbols
+-- Dimension table: one row per unique stock symbol.
+-- Contains descriptive attributes about each ticker derived from the trading history.
+--
+-- In a production DW you would enrich this with a reference API (e.g., company name,
+-- sector, market cap). For this project we derive what we can from the data we have.
+--
+-- TODO: If you have access to a symbol reference table or API, join it here to add
+--       COMPANY_NAME, SECTOR, INDUSTRY, etc.
+
+SELECT
+    SYMBOL,
+
+    -- Date range this symbol appears in your dataset
+    MIN(TRADE_DATE)  AS FIRST_SEEN_DATE,
+    MAX(TRADE_DATE)  AS LAST_SEEN_DATE,
+    COUNT(*)         AS TOTAL_TRADING_DAYS,
+
+    -- Price range across the full history
+    MAX(HIGH)        AS ALL_TIME_HIGH,
+    MIN(LOW)         AS ALL_TIME_LOW,
+    AVG(CLOSE)       AS AVG_CLOSE_PRICE,
+
+    -- Activity level (useful for filtering small/inactive tickers)
+    AVG(VOLUME)      AS AVG_DAILY_VOLUME
+
+FROM SNOWBEARAIR_DB.RAW.raw_stocks
+GROUP BY SYMBOL
+        );
+[0m13:32:28.849111 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:31.545227 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.696 seconds
+[0m13:32:31.549007 [info ] [Thread-2 (]: 7 of 13 OK created sql table model RAW.dim_symbols ............................. [[32mSUCCESS 1[0m in 2.72s]
+[0m13:32:31.550366 [debug] [Thread-2 (]: Finished running node model.itm327.dim_symbols
+[0m13:32:31.551228 [debug] [Thread-2 (]: Began running node model.itm327.fct_daily_stocks
+[0m13:32:31.552261 [info ] [Thread-2 (]: 8 of 13 START sql table model RAW.fct_daily_stocks ............................. [RUN]
+[0m13:32:31.553048 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.dim_symbols, now model.itm327.fct_daily_stocks)
+[0m13:32:31.553629 [debug] [Thread-2 (]: Began compiling node model.itm327.fct_daily_stocks
+[0m13:32:31.562583 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.fct_daily_stocks"
+[0m13:32:31.563589 [debug] [Thread-2 (]: Began executing node model.itm327.fct_daily_stocks
+[0m13:32:31.570591 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.fct_daily_stocks"
+[0m13:32:31.573167 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.fct_daily_stocks"
+[0m13:32:31.574065 [debug] [Thread-2 (]: On model.itm327.fct_daily_stocks: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.fct_daily_stocks"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.fct_daily_stocks
+         as
+        (-- fct_daily_stocks
+-- Fact table: one row per stock symbol per trading day.
+-- Grain: SYMBOL + TRADE_DATE
+--
+-- This is the central fact table for your data warehouse.
+-- It references dimension tables (dim_symbols, dim_weather_cities)
+-- and adds calculated metrics that marts can aggregate from.
+--
+-- TODO: Review columns and adjust any casting or renaming to match
+--       your raw data. Run `dbt run --select fct_daily_stocks` to build.
+
+SELECT
+    -- Keys (link to dimension tables)
+    s.SYMBOL,
+    s.TRADE_DATE,
+
+    -- Price metrics (from raw OHLCV)
+    s.OPEN,
+    s.HIGH,
+    s.LOW,
+    s.CLOSE,
+    s.VOLUME,
+
+    -- Derived price metrics (calculated here so marts don't repeat logic)
+    s.HIGH - s.LOW                                              AS DAILY_RANGE,
+    s.CLOSE - s.OPEN                                           AS DAILY_CHANGE,
+    ROUND((s.CLOSE - s.OPEN) / NULLIF(s.OPEN, 0) * 100, 4)   AS PCT_CHANGE,
+
+    -- Direction flag (useful for counting up/down days in marts)
+    CASE
+        WHEN s.CLOSE > s.OPEN THEN 'UP'
+        WHEN s.CLOSE < s.OPEN THEN 'DOWN'
+        ELSE 'FLAT'
+    END AS DIRECTION,
+
+    -- News coverage for this symbol on this day
+    COUNT(n.ID)                                                AS NEWS_ARTICLE_COUNT,
+    ARRAY_AGG(n.HEADLINE)                                      AS HEADLINES,
+    ARRAY_AGG(DISTINCT n.CATEGORY)                             AS NEWS_CATEGORIES
+
+FROM SNOWBEARAIR_DB.RAW.raw_stocks s
+LEFT JOIN SNOWBEARAIR_DB.RAW.raw_news n
+    ON  s.SYMBOL     = n.RELATED
+    AND s.TRADE_DATE = n.DATETIME::DATE
+
+GROUP BY
+    s.SYMBOL,
+    s.TRADE_DATE,
+    s.OPEN,
+    s.HIGH,
+    s.LOW,
+    s.CLOSE,
+    s.VOLUME
+        );
+[0m13:32:31.574858 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:33.905326 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.330 seconds
+[0m13:32:33.908979 [info ] [Thread-2 (]: 8 of 13 OK created sql table model RAW.fct_daily_stocks ........................ [[32mSUCCESS 1[0m in 2.36s]
+[0m13:32:33.910109 [debug] [Thread-2 (]: Finished running node model.itm327.fct_daily_stocks
+[0m13:32:33.910815 [debug] [Thread-2 (]: Began running node model.itm327.market_volatility_metrics
+[0m13:32:33.912014 [info ] [Thread-2 (]: 9 of 13 START python table model RAW.market_volatility_metrics ................. [RUN]
+[0m13:32:33.912858 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.fct_daily_stocks, now model.itm327.market_volatility_metrics)
+[0m13:32:33.913465 [debug] [Thread-2 (]: Began compiling node model.itm327.market_volatility_metrics
+[0m13:32:33.921371 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.market_volatility_metrics"
+[0m13:32:33.922355 [debug] [Thread-2 (]: Began executing node model.itm327.market_volatility_metrics
+[0m13:32:33.929384 [debug] [Thread-2 (]: Writing runtime python for node "model.itm327.market_volatility_metrics"
+[0m13:32:33.932692 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.market_volatility_metrics"
+[0m13:32:33.933943 [debug] [Thread-2 (]: On model.itm327.market_volatility_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.market_volatility_metrics"} */
+WITH market_volatility_metrics__dbt_sp AS PROCEDURE ()
+
+RETURNS STRING
+LANGUAGE PYTHON
+RUNTIME_VERSION = '3.9'
+PACKAGES = ('snowflake-snowpark-python')
+
+
+
+HANDLER = 'main'
+EXECUTE AS CALLER
+AS
+$$
+
+
+
+  
+    
+    
+from snowflake.snowpark.functions import col, avg, stddev, max as max_, min as min_, count, sum as sum_, lit
+from snowflake.snowpark.functions import when
+
+
+def model(dbt, session):
+    """
+    Snowpark Python model: per-symbol volatility and volume metrics.
+
+    Demonstrates dbt Python models using Snowpark DataFrames instead of SQL.
+    Useful for complex calculations that are verbose in SQL, such as
+    statistical measures (standard deviation) and conditional aggregations.
+
+    Output: one row per stock symbol summarizing its full history in the dataset.
+    """
+    # Reference staging models via dbt.ref() — same as ref() in SQL
+    stocks_df = dbt.ref('raw_stocks')
+
+    # Compute derived columns before aggregation
+    stocks_with_metrics = stocks_df.withColumn(
+        'DAILY_RANGE', col('HIGH') - col('LOW')
+    ).withColumn(
+        'DAILY_CHANGE', col('CLOSE') - col('OPEN')
+    ).withColumn(
+        'DAILY_RETURN_PCT', (col('CLOSE') - col('OPEN')) / col('OPEN') * lit(100)
+    )
+
+    # Aggregate per symbol across all trading days
+    summary = (
+        stocks_with_metrics
+        .groupBy('SYMBOL')
+        .agg(
+            count('TRADE_DATE').alias('TRADING_DAYS'),
+            min_('TRADE_DATE').alias('FIRST_TRADE_DATE'),
+            max_('TRADE_DATE').alias('LAST_TRADE_DATE'),
+            max_('HIGH').alias('PERIOD_HIGH'),
+            min_('LOW').alias('PERIOD_LOW'),
+            avg('CLOSE').alias('AVG_CLOSE'),
+            avg('VOLUME').alias('AVG_DAILY_VOLUME'),
+            sum_('VOLUME').alias('TOTAL_VOLUME'),
+            avg('DAILY_RANGE').alias('AVG_DAILY_RANGE'),
+            stddev('DAILY_RETURN_PCT').alias('RETURN_VOLATILITY'),
+            avg('DAILY_RETURN_PCT').alias('AVG_DAILY_RETURN_PCT'),
+            sum_(when(col('DAILY_CHANGE') > lit(0), lit(1)).otherwise(lit(0))).alias('UP_DAYS'),
+            sum_(when(col('DAILY_CHANGE') < lit(0), lit(1)).otherwise(lit(0))).alias('DOWN_DAYS'),
+        )
+    )
+
+    return summary
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_stocks": "SNOWBEARAIR_DB.RAW.raw_stocks"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "SNOWBEARAIR_DB"
+    schema = "RAW"
+    identifier = "market_volatility_metrics"
+    
+    def __repr__(self):
+        return 'SNOWBEARAIR_DB.RAW.market_volatility_metrics'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+
+
+def materialize(session, df, target_relation):
+    # make sure pandas exists
+    import importlib.util
+    package_name = 'pandas'
+    if importlib.util.find_spec(package_name):
+        import pandas
+        if isinstance(df, pandas.core.frame.DataFrame):
+          session.use_database(target_relation.database)
+          session.use_schema(target_relation.schema)
+          # session.write_pandas does not have overwrite function
+          df = session.createDataFrame(df)
+    
+    df.write.mode("overwrite").save_as_table('SNOWBEARAIR_DB.RAW.market_volatility_metrics', table_type='transient')
+
+def main(session):
+    dbt = dbtObj(session.table)
+    df = model(dbt, session)
+    materialize(session, df, dbt.this)
+    return "OK"
+
+  
+$$
+CALL market_volatility_metrics__dbt_sp();
+[0m13:32:33.934881 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:40.646878 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 6.712 seconds
+[0m13:32:40.651894 [info ] [Thread-2 (]: 9 of 13 OK created python table model RAW.market_volatility_metrics ............ [[32mSUCCESS 1[0m in 6.74s]
+[0m13:32:40.652922 [debug] [Thread-2 (]: Finished running node model.itm327.market_volatility_metrics
+[0m13:32:40.653644 [debug] [Thread-2 (]: Began running node model.itm327.dim_weather_cities
+[0m13:32:40.654537 [info ] [Thread-2 (]: 10 of 13 START sql table model RAW.dim_weather_cities .......................... [RUN]
+[0m13:32:40.655283 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.market_volatility_metrics, now model.itm327.dim_weather_cities)
+[0m13:32:40.655898 [debug] [Thread-2 (]: Began compiling node model.itm327.dim_weather_cities
+[0m13:32:40.664189 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.dim_weather_cities"
+[0m13:32:40.665130 [debug] [Thread-2 (]: Began executing node model.itm327.dim_weather_cities
+[0m13:32:40.672067 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.dim_weather_cities"
+[0m13:32:40.674153 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.dim_weather_cities"
+[0m13:32:40.674958 [debug] [Thread-2 (]: On model.itm327.dim_weather_cities: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.dim_weather_cities"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.dim_weather_cities
+         as
+        (-- dim_weather_cities
+-- Dimension table: one row per financial hub city tracked by the weather pipeline.
+--
+-- In your data warehouse, this acts as the "location" dimension —
+-- marts that analyze market performance by geography join against this table.
+--
+-- TODO: Add a city-to-exchange mapping if you want to associate each city with
+--       a specific stock exchange (e.g., New York → NYSE/NASDAQ, London → LSE).
+
+SELECT
+    CITY,
+
+    -- Date range this city appears in your weather data
+    MIN(DATE)   AS FIRST_OBSERVATION_DATE,
+    MAX(DATE)   AS LAST_OBSERVATION_DATE,
+    COUNT(*)    AS TOTAL_OBSERVATION_DAYS,
+
+    -- Typical conditions (descriptive stats across the full history)
+    ROUND(AVG(MAX_TEMP), 2)   AS AVG_MAX_TEMP,
+    ROUND(AVG(MIN_TEMP), 2)   AS AVG_MIN_TEMP,
+    ROUND(AVG(PRECIP), 2)     AS AVG_DAILY_PRECIP,
+    ROUND(AVG(MAX_WIND), 2)   AS AVG_MAX_WIND,
+
+    -- Extreme conditions
+    MAX(MAX_TEMP)             AS HOTTEST_DAY_TEMP,
+    MIN(MIN_TEMP)             AS COLDEST_DAY_TEMP,
+    MAX(PRECIP)               AS WETTEST_DAY_PRECIP
+
+FROM SNOWBEARAIR_DB.RAW.raw_weather
+GROUP BY CITY
+        );
+[0m13:32:40.675628 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:42.815937 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.140 seconds
+[0m13:32:42.819432 [info ] [Thread-2 (]: 10 of 13 OK created sql table model RAW.dim_weather_cities ..................... [[32mSUCCESS 1[0m in 2.16s]
+[0m13:32:42.820420 [debug] [Thread-2 (]: Finished running node model.itm327.dim_weather_cities
+[0m13:32:42.821135 [debug] [Thread-2 (]: Began running node model.itm327.fct_daily_weather
+[0m13:32:42.821984 [info ] [Thread-2 (]: 11 of 13 START sql table model RAW.fct_daily_weather ........................... [RUN]
+[0m13:32:42.822698 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.dim_weather_cities, now model.itm327.fct_daily_weather)
+[0m13:32:42.823255 [debug] [Thread-2 (]: Began compiling node model.itm327.fct_daily_weather
+[0m13:32:42.829420 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.fct_daily_weather"
+[0m13:32:42.830333 [debug] [Thread-2 (]: Began executing node model.itm327.fct_daily_weather
+[0m13:32:42.837119 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.fct_daily_weather"
+[0m13:32:42.838632 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.fct_daily_weather"
+[0m13:32:42.839340 [debug] [Thread-2 (]: On model.itm327.fct_daily_weather: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.fct_daily_weather"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.fct_daily_weather
+         as
+        (-- fct_daily_weather
+-- Fact table: one row per city per observation day.
+-- Grain: CITY + DATE
+--
+-- Accepts weather readings from staging into the warehouse layer.
+-- Marts that need weather data must reference this table via ref(),
+-- not reach back to the raw_weather staging view directly.
+--
+-- TODO: If your weather pipeline adds new columns (e.g., humidity,
+--       UV index), add them here so marts inherit them automatically.
+
+SELECT
+    DATE,
+    CITY,
+    MAX_TEMP,
+    MIN_TEMP,
+    PRECIP,
+    MAX_WIND
+
+FROM SNOWBEARAIR_DB.RAW.raw_weather
+        );
+[0m13:32:42.839953 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:44.651590 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.811 seconds
+[0m13:32:44.655302 [info ] [Thread-2 (]: 11 of 13 OK created sql table model RAW.fct_daily_weather ...................... [[32mSUCCESS 1[0m in 1.83s]
+[0m13:32:44.656254 [debug] [Thread-2 (]: Finished running node model.itm327.fct_daily_weather
+[0m13:32:44.656954 [debug] [Thread-2 (]: Began running node model.itm327.stock_news_daily
+[0m13:32:44.658122 [info ] [Thread-2 (]: 12 of 13 START sql table model RAW.stock_news_daily ............................ [RUN]
+[0m13:32:44.659020 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.fct_daily_weather, now model.itm327.stock_news_daily)
+[0m13:32:44.659658 [debug] [Thread-2 (]: Began compiling node model.itm327.stock_news_daily
+[0m13:32:44.665936 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.stock_news_daily"
+[0m13:32:44.666906 [debug] [Thread-2 (]: Began executing node model.itm327.stock_news_daily
+[0m13:32:44.676291 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.stock_news_daily"
+[0m13:32:44.678424 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.stock_news_daily"
+[0m13:32:44.679250 [debug] [Thread-2 (]: On model.itm327.stock_news_daily: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.stock_news_daily"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.stock_news_daily
+         as
+        (-- stock_news_daily
+-- Mart 1: Daily stock performance enriched with news coverage.
+-- Reads from fct_daily_stocks (warehouse layer) — no raw joins here.
+-- Each row = one stock symbol on one trading day.
+
+SELECT
+    f.SYMBOL,
+    f.TRADE_DATE,
+    f.OPEN,
+    f.HIGH,
+    f.LOW,
+    f.CLOSE,
+    f.VOLUME,
+    f.DAILY_RANGE,
+    f.DAILY_CHANGE,
+    f.PCT_CHANGE,
+    f.DIRECTION,
+    f.NEWS_ARTICLE_COUNT,
+    f.NEWS_CATEGORIES,
+    f.HEADLINES,
+
+    -- Enrich with symbol-level context from the dimension
+    d.ALL_TIME_HIGH,
+    d.ALL_TIME_LOW,
+    d.AVG_CLOSE_PRICE,
+
+    -- How far is today's close from the symbol's all-time high?
+    ROUND((f.CLOSE - d.ALL_TIME_HIGH) / NULLIF(d.ALL_TIME_HIGH, 0) * 100, 4) AS PCT_FROM_ATH
+
+FROM SNOWBEARAIR_DB.RAW.fct_daily_stocks f
+LEFT JOIN SNOWBEARAIR_DB.RAW.dim_symbols d
+    ON f.SYMBOL = d.SYMBOL
+        );
+[0m13:32:44.680000 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:47.372981 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.693 seconds
+[0m13:32:47.376497 [info ] [Thread-2 (]: 12 of 13 OK created sql table model RAW.stock_news_daily ....................... [[32mSUCCESS 1[0m in 2.72s]
+[0m13:32:47.377449 [debug] [Thread-2 (]: Finished running node model.itm327.stock_news_daily
+[0m13:32:47.378187 [debug] [Thread-2 (]: Began running node model.itm327.weather_market_conditions
+[0m13:32:47.379208 [info ] [Thread-2 (]: 13 of 13 START sql table model RAW.weather_market_conditions ................... [RUN]
+[0m13:32:47.379982 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.itm327.stock_news_daily, now model.itm327.weather_market_conditions)
+[0m13:32:47.380555 [debug] [Thread-2 (]: Began compiling node model.itm327.weather_market_conditions
+[0m13:32:47.387462 [debug] [Thread-2 (]: Writing injected SQL for node "model.itm327.weather_market_conditions"
+[0m13:32:47.388476 [debug] [Thread-2 (]: Began executing node model.itm327.weather_market_conditions
+[0m13:32:47.395395 [debug] [Thread-2 (]: Writing runtime sql for node "model.itm327.weather_market_conditions"
+[0m13:32:47.398155 [debug] [Thread-2 (]: Using snowflake connection "model.itm327.weather_market_conditions"
+[0m13:32:47.399155 [debug] [Thread-2 (]: On model.itm327.weather_market_conditions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "itm327", "target_name": "dev", "node_id": "model.itm327.weather_market_conditions"} */
+create or replace transient table SNOWBEARAIR_DB.RAW.weather_market_conditions
+         as
+        (-- weather_market_conditions
+-- Mart 2: Daily weather at financial hub cities alongside broad market performance.
+-- Reads from warehouse layer only (fct_daily_weather, fct_daily_stocks, dim_weather_cities).
+-- Each row = one city on one day.
+-- Use this mart to explore whether weather at financial hubs correlates with market moves.
+--
+-- NOTE: This mart references fct_daily_weather (warehouse layer), not raw_weather (staging).
+-- Best practice: marts should always build off warehouse-layer models, never staging directly.
+
+SELECT
+    w.DATE                                              AS TRADE_DATE,
+    w.CITY,
+
+    -- Weather conditions
+    w.MAX_TEMP,
+    w.MIN_TEMP,
+    w.PRECIP,
+    w.MAX_WIND,
+
+    -- City context from the dimension
+    c.AVG_MAX_TEMP                                      AS CITY_NORMAL_MAX_TEMP,
+    w.MAX_TEMP - c.AVG_MAX_TEMP                        AS TEMP_DEVIATION_FROM_NORMAL,
+
+    -- Broad market performance for that day
+    COUNT(DISTINCT f.SYMBOL)                           AS STOCKS_TRACKED,
+    ROUND(AVG(f.PCT_CHANGE), 4)                        AS AVG_PCT_CHANGE,
+    ROUND(AVG(f.DAILY_RANGE), 4)                       AS AVG_DAILY_RANGE,
+    SUM(f.VOLUME)                                      AS TOTAL_MARKET_VOLUME,
+    SUM(CASE WHEN f.DIRECTION = 'UP'   THEN 1 ELSE 0 END) AS STOCKS_UP,
+    SUM(CASE WHEN f.DIRECTION = 'DOWN' THEN 1 ELSE 0 END) AS STOCKS_DOWN,
+    SUM(CASE WHEN f.DIRECTION = 'FLAT' THEN 1 ELSE 0 END) AS STOCKS_FLAT
+
+FROM SNOWBEARAIR_DB.RAW.fct_daily_weather w
+LEFT JOIN SNOWBEARAIR_DB.RAW.dim_weather_cities c
+    ON w.CITY = c.CITY
+LEFT JOIN SNOWBEARAIR_DB.RAW.fct_daily_stocks f
+    ON w.DATE = f.TRADE_DATE
+GROUP BY
+    w.DATE,
+    w.CITY,
+    w.MAX_TEMP,
+    w.MIN_TEMP,
+    w.PRECIP,
+    w.MAX_WIND,
+    c.AVG_MAX_TEMP
+        );
+[0m13:32:47.399936 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:50.225097 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.825 seconds
+[0m13:32:50.228623 [info ] [Thread-2 (]: 13 of 13 OK created sql table model RAW.weather_market_conditions .............. [[32mSUCCESS 1[0m in 2.85s]
+[0m13:32:50.229552 [debug] [Thread-2 (]: Finished running node model.itm327.weather_market_conditions
+[0m13:32:50.232314 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m13:32:50.232882 [debug] [Dummy-1   ]: Connection 'list_SNOWBEARAIR_DB' was properly closed.
+[0m13:32:50.233360 [debug] [Dummy-1   ]: Connection 'model.itm327.weather_market_conditions' was properly closed.
+[0m13:32:50.234095 [info ] [Dummy-1   ]: 
+[0m13:32:50.234672 [info ] [Dummy-1   ]: Finished running 10 table models, 3 view models in 0 hours 0 minutes and 39.14 seconds (39.14s).
+[0m13:32:50.237805 [debug] [Dummy-1   ]: Command end result
+[0m13:32:50.279427 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m13:32:50.282121 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m13:32:50.291338 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m13:32:50.291982 [info ] [Dummy-1   ]: 
+[0m13:32:50.292656 [info ] [Dummy-1   ]: [32mCompleted successfully[0m
+[0m13:32:50.293165 [info ] [Dummy-1   ]: 
+[0m13:32:50.293680 [info ] [Dummy-1   ]: Done. PASS=13 WARN=0 ERROR=0 SKIP=0 TOTAL=13
+[0m13:32:50.295700 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 41.338493, "process_in_blocks": "0", "process_kernel_time": 1.09, "process_mem_max_rss": "485240", "process_out_blocks": "0", "process_user_time": 6.29}
+[0m13:32:50.296413 [debug] [Dummy-1   ]: Command `cli run` succeeded at 13:32:50.296140 after 41.34 seconds
+[0m13:32:50.296975 [debug] [Dummy-1   ]: Flushing usage events

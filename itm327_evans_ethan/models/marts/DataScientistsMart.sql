@@ -52,4 +52,3 @@ SELECT
 FROM snowbearair_db.raw.stonks s
 LEFT JOIN weather_pivot w
     ON CAST(s.datetime AS DATE) = w.date
-;

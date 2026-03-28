@@ -1,0 +1,129 @@
+
+  
+    
+    
+from snowflake.snowpark.functions import col, avg, stddev, max as max_, min as min_, count, sum as sum_, lit
+from snowflake.snowpark.functions import when
+
+
+def model(dbt, session):
+    """
+    Snowpark Python model: per-symbol volatility and volume metrics.
+
+    Demonstrates dbt Python models using Snowpark DataFrames instead of SQL.
+    Useful for complex calculations that are verbose in SQL, such as
+    statistical measures (standard deviation) and conditional aggregations.
+
+    Output: one row per stock symbol summarizing its full history in the dataset.
+    """
+    # Reference staging models via dbt.ref() — same as ref() in SQL
+    stocks_df = dbt.ref('raw_stocks')
+
+    # Compute derived columns before aggregation
+    stocks_with_metrics = stocks_df.withColumn(
+        'DAILY_RANGE', col('HIGH') - col('LOW')
+    ).withColumn(
+        'DAILY_CHANGE', col('CLOSE') - col('OPEN')
+    ).withColumn(
+        'DAILY_RETURN_PCT', (col('CLOSE') - col('OPEN')) / col('OPEN') * lit(100)
+    )
+
+    # Aggregate per symbol across all trading days
+    summary = (
+        stocks_with_metrics
+        .groupBy('SYMBOL')
+        .agg(
+            count('TRADE_DATE').alias('TRADING_DAYS'),
+            min_('TRADE_DATE').alias('FIRST_TRADE_DATE'),
+            max_('TRADE_DATE').alias('LAST_TRADE_DATE'),
+            max_('HIGH').alias('PERIOD_HIGH'),
+            min_('LOW').alias('PERIOD_LOW'),
+            avg('CLOSE').alias('AVG_CLOSE'),
+            avg('VOLUME').alias('AVG_DAILY_VOLUME'),
+            sum_('VOLUME').alias('TOTAL_VOLUME'),
+            avg('DAILY_RANGE').alias('AVG_DAILY_RANGE'),
+            stddev('DAILY_RETURN_PCT').alias('RETURN_VOLATILITY'),
+            avg('DAILY_RETURN_PCT').alias('AVG_DAILY_RETURN_PCT'),
+            sum_(when(col('DAILY_CHANGE') > lit(0), lit(1)).otherwise(lit(0))).alias('UP_DAYS'),
+            sum_(when(col('DAILY_CHANGE') < lit(0), lit(1)).otherwise(lit(0))).alias('DOWN_DAYS'),
+        )
+    )
+
+    return summary
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_stocks": "SNOWBEARAIR_DB.RAW.raw_stocks"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "SNOWBEARAIR_DB"
+    schema = "RAW"
+    identifier = "market_volatility_metrics"
+    
+    def __repr__(self):
+        return 'SNOWBEARAIR_DB.RAW.market_volatility_metrics'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+
+
+def materialize(session, df, target_relation):
+    # make sure pandas exists
+    import importlib.util
+    package_name = 'pandas'
+    if importlib.util.find_spec(package_name):
+        import pandas
+        if isinstance(df, pandas.core.frame.DataFrame):
+          session.use_database(target_relation.database)
+          session.use_schema(target_relation.schema)
+          # session.write_pandas does not have overwrite function
+          df = session.createDataFrame(df)
+    
+    df.write.mode("overwrite").save_as_table('SNOWBEARAIR_DB.RAW.market_volatility_metrics', table_type='transient')
+
+def main(session):
+    dbt = dbtObj(session.table)
+    df = model(dbt, session)
+    materialize(session, df, dbt.this)
+    return "OK"
+
+  

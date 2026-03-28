@@ -1,4 +1,10 @@
--- show stock data alongside weather data
+
+  
+    
+
+        create or replace transient table SNOWBEARAIR_DB.RAW.DataScientistMart
+         as
+        (-- show stock data alongside weather data
 
 WITH weather_pivot AS (
     SELECT
@@ -52,3 +58,6 @@ SELECT
 FROM snowbearair_db.raw.stonks s
 LEFT JOIN weather_pivot w
     ON CAST(s.datetime AS DATE) = w.date
+        );
+      
+  
